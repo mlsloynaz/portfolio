@@ -19,7 +19,6 @@
 @font-face {
   font-family: 'Aeonik-Regular';
   src: url('/fonts/Aeonik-Regular.ttf') format('truetype');
-  /* Add additional font formats if necessary */
   font-weight: normal;
   font-style: normal;
 }
