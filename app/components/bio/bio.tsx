@@ -17,6 +17,7 @@ export default function Bio() {
                         layout='fill'
                         objectFit='cover'
                         placeholder="blur"
+                        blurDataURL=""
                     />
                 </div>
             </div>
