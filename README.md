@@ -1,10 +1,11 @@
 # Portfolio : Maria Sierra, Web developer
 
+Github Project : https://github.com/users/mlsloynaz/projects/4/views/1
+Visit web site(main branch):  https://portfolio-eta-pearl-25.vercel.app/
+
 ## Content
 
 This is a repo that contains the source code for the portfolio website
-
-Go to the Portfolio :  https://portfolio-eta-pearl-25.vercel.app/
 
 The Portfolio have the following sections : **About**, **Experience**, **Testimonial** , **ContactMe**
 
