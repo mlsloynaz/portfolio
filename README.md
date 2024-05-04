@@ -1,7 +1,8 @@
 # Portfolio : Maria Sierra, Web developer
 
-Github Project : https://github.com/users/mlsloynaz/projects/4/views/1
-Visit web site(main branch):  https://portfolio-eta-pearl-25.vercel.app/
+- [Github Project](https://github.com/users/mlsloynaz/projects/4/views/1)
+
+- [Visit web site from main branch](https://portfolio-eta-pearl-25.vercel.app/)
 
 ## Content
 
