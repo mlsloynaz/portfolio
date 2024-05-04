@@ -3,7 +3,7 @@ import bgLogo from '/public/images/bg-logo.png'
 
 export default function Bio() {
     return (
-        <div className="flex flex-col w-full h-full max-w-96 min-w-72 md:max-w-full lg:max-w-[1024px]">
+        <div id="bio-section" className="flex flex-col w-full h-full max-w-96 min-w-72 md:max-w-full lg:max-w-[1024px]">
             <div className="flex flex-col md:flex-row md:h-56 lg:h-80">
                 <div id="bio" className="flex flex-col h-full p-4 bg-gradient-to-b from-blue-800 to-gray-700 text-stone-100 max-w-96 min-w-72">
                     <h1 className="text-2xl py-8">HI, I am Maria
