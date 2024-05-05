@@ -3,7 +3,7 @@
 import { useEffect, useState, useRef } from 'react'
 import Image from "next/image";
 import { projectData } from '@/utils/projectData'
-import { ProjectDataType } from "@/app/definitions/projectDataType";
+import { ProjectDataType } from "@/app/utils/definitions/projectDataType";
 import chevron from '/public/images/chevron.svg'
 import Thumbnail from './thumbnail';
 
