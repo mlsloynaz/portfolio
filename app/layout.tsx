@@ -27,37 +27,37 @@ export default function RootLayout({
           <p className="text-xl pb-8">Credits</p>
           <ul>
             <li>
-              <a href="https://iconscout.com/icons/angularjs" class="text-underline font-size-sm" target="_blank">Angularjs</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" className="text-sm">IconScout</a>
+              <a href="https://iconscout.com/icons/angularjs" className="text-underline font-size-sm" target="_blank">Angularjs</a> by <a href="https://iconscout.com/contributors/icon-mafia" className="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" className="text-sm">IconScout</a>
             </li>
             <li>
-              <a href="https://iconscout.com/icons/git" class="text-underline font-size-sm" target="_blank">Git</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
+              <a href="https://iconscout.com/icons/git" className="text-underline font-size-sm" target="_blank">Git</a> by <a href="https://iconscout.com/contributors/icon-mafia" className="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" className="text-underline font-size-sm">IconScout</a>
             </li>
             <li>
-              <a href="https://iconscout.com/icons/github" class="text-underline font-size-sm" target="_blank">Github</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
+              <a href="https://iconscout.com/icons/github" className="text-underline font-size-sm" target="_blank">Github</a> on <a href="https://iconscout.com" className="text-underline font-size-sm">IconScout</a>
             </li>
             <li>
-              <a href="https://iconscout.com/icons/nodejs" class="text-underline font-size-sm" target="_blank">Nodejs</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm" target="_blank">Icon Mafia</a>
+              <a href="https://iconscout.com/icons/nodejs" className="text-underline font-size-sm" target="_blank">Nodejs</a> by <a href="https://iconscout.com/contributors/icon-mafia" className="text-underline font-size-sm" target="_blank">Icon Mafia</a>
             </li>
             <li>
-              <a href="https://iconscout.com/icons/javascript" class="text-underline font-size-sm" target="_blank">javascript</a> by <a href="https://iconscout.com/contributors/maninderkaur" class="text-underline font-size-sm">maninderkaur</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
+              <a href="https://iconscout.com/icons/javascript" className="text-underline font-size-sm" target="_blank">javascript</a> by <a href="https://iconscout.com/contributors/maninderkaur" className="text-underline font-size-sm">maninderkaur</a> on <a href="https://iconscout.com" className="text-underline font-size-sm">IconScout</a>
             </li>
             <li>
-              <a href="https://iconscout.com/icons/typescript" class="text-underline font-size-sm" target="_blank">Typescript</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
+              <a href="https://iconscout.com/icons/typescript" className="text-underline font-size-sm" target="_blank">Typescript</a> by <a href="https://iconscout.com/contributors/icon-mafia" className="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" className="text-underline font-size-sm">IconScout</a>
             </li>
             <li>
-              <a href="https://iconscout.com/icons/html" class="text-underline font-size-sm" target="_blank">Html</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
+              <a href="https://iconscout.com/icons/html" className="text-underline font-size-sm" target="_blank">Html</a> by <a href="https://iconscout.com/contributors/icon-mafia" className="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" className="text-underline font-size-sm">IconScout</a>
             </li>
             <li>
-              <a href="https://iconscout.com/icons/css" class="text-underline font-size-sm" target="_blank">Css</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
+              <a href="https://iconscout.com/icons/css" className="text-underline font-size-sm" target="_blank">Css</a> by <a href="https://iconscout.com/contributors/icon-mafia" className="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" className="text-underline font-size-sm">IconScout</a>
             </li>
             <li>
-              <a href="https://iconscout.com/icons/react" class="text-underline font-size-sm" target="_blank">React</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm" target="_blank">Icon Mafia</a>
+              <a href="https://iconscout.com/icons/react" className="text-underline font-size-sm" target="_blank">React</a> by <a href="https://iconscout.com/contributors/icon-mafia" className="text-underline font-size-sm" target="_blank">Icon Mafia</a>
             </li>
             <li>
-              <a href="https://iconscout.com/icons/express" class="text-underline font-size-sm" target="_blank">Express</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
+              <a href="https://iconscout.com/icons/express" className="text-underline font-size-sm" target="_blank">Express</a> by <a href="https://iconscout.com/contributors/icon-mafia" className="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" className="text-underline font-size-sm">IconScout</a>
             </li>
             <li>
-              <a href="https://iconscout.com/icons/chevron-right" class="text-underline font-size-sm" target="_blank">Chevron Right</a> by <a href="https://iconscout.com/contributors/fatkhulkarim" class="text-underline font-size-sm">Fatkhul Karim</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
+              <a href="https://iconscout.com/icons/chevron-right" className="text-underline font-size-sm" target="_blank">Chevron Right</a> by <a href="https://iconscout.com/contributors/fatkhulkarim" className="text-underline font-size-sm">Fatkhul Karim</a> on <a href="https://iconscout.com" className="text-underline font-size-sm">IconScout</a>
             </li>
            
           </ul>
