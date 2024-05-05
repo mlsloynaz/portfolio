@@ -15,7 +15,7 @@ export default function Bio() {
                         src={bgLogo}
                         alt="Picture of the author"
                         layout='fill'
-                        objectFit='cover'
+                        className='object-cover'
                         placeholder="blur"
                         blurDataURL=""
                     />
