@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ContactDetails() {
     return (
         <div id="contact-section" className="flex flex-col w-full h-full max-w-96 min-w-72 md:max-w-full lg:max-w-[1024px] py-8">
@@ -19,7 +21,7 @@ export default function ContactDetails() {
                         </dl>
                     </div>
                     <div>
-                        <button>Contact Me</button>
+                        <Link href="/contactme">Contact Me</Link>
                     </div>
                 </div>
             </div>
