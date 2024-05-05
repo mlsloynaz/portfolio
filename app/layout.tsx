@@ -19,8 +19,8 @@ export default function RootLayout({
           <div className="bg-black h-12 px-8 md:px-28 py-4 text-stone-50">
             Maria Sierra-Loynaz, Web developer portfolio
           </div>
-          <div className="flex justify-between h-20 px-8 md:px-28 py-4 bg-stone-50">menu
-            <Link className="button-white" href="/contactme">Contact Me</Link>
+          <div className="flex justify-between items-center h-20 px-8 md:px-28 py-4 bg-stone-50">menu
+            <Link className="button-blue" href="/contactme">Contact Me</Link>
           </div>
         </header>
         {children}
