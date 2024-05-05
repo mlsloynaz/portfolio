@@ -20,7 +20,7 @@ export default function Thumbnail({ title, description, logo }: ThumbnailProp) {
                         src={`/images/${logo}`}
                         alt={title}
                         layout='fill'
-                        objectFit='contain'
+                        className='object-contain'
                         blurDataURL={`/public/images/blur-${logo}`}
                     />
                 </div>
