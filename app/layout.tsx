@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import "./globals.css";
-
 
 export const metadata: Metadata = {
   title: "MariaSierra Web developer",
@@ -19,7 +19,8 @@ export default function RootLayout({
           <div className="bg-black h-12 px-8 md:px-28 py-4 text-stone-50">
             Maria Sierra-Loynaz, Web developer portfolio
           </div>
-          <div className="h-20 px-8 md:px-28 py-4 bg-stone-50">menu
+          <div className="flex justify-between h-20 px-8 md:px-28 py-4 bg-stone-50">menu
+            <Link className="button-white" href="/contactme">Contact Me</Link>
           </div>
         </header>
         {children}
@@ -59,7 +60,7 @@ export default function RootLayout({
             <li>
               <a href="https://iconscout.com/icons/chevron-right" className="text-underline font-size-sm" target="_blank">Chevron Right</a> by <a href="https://iconscout.com/contributors/fatkhulkarim" className="text-underline font-size-sm">Fatkhul Karim</a> on <a href="https://iconscout.com" className="text-underline font-size-sm">IconScout</a>
             </li>
-           
+
           </ul>
         </footer>
       </body>

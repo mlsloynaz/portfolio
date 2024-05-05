@@ -21,7 +21,7 @@ export default function ContactDetails() {
                         </dl>
                     </div>
                     <div>
-                        <Link href="/contactme">Contact Me</Link>
+                        <Link className="button-white" href="/contactme">Contact Me</Link>
                     </div>
                 </div>
             </div>
