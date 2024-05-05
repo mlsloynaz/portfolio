@@ -25,7 +25,7 @@ export default function RootLayout({
         {children}
         <footer className="w-full bg-black px-8 md:px-28 py-4 text-stone-50">
           <p className="text-xl pb-8">Credits</p>
-          <ul>
+          <ul className="list-disc">
             <li>
               <a href="https://iconscout.com/icons/angularjs" className="text-underline font-size-sm" target="_blank">Angularjs</a> by <a href="https://iconscout.com/contributors/icon-mafia" className="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" className="text-sm">IconScout</a>
             </li>

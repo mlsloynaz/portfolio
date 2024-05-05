@@ -7,7 +7,7 @@ import { ProjectDataType } from "@/app/definitions/projectDataType";
 import chevron from '/public/images/chevron.svg'
 import Thumbnail from './thumbnail';
 
-const SCROLL_AMOUNT = 100
+const SCROLL_AMOUNT = 240
 
 export default function ProjectList() {
     const [scrollLeft, setScrollLeft] = useState(0);
@@ -61,8 +61,8 @@ export default function ProjectList() {
     };
 
     return (
-        <div className="flex px-2 sm:px-5 items-center">
-            <div className="relative h-36 w-36 transform rotate-180">
+        <div className="flex sm:px-5 items-center">
+            <div className="relative h-36 w-36 min-w-10 transform rotate-180">
                 {scrollLeft > 0 ?
                     <button onClick={scrollLeftHandler}>
                         <Image
@@ -73,14 +73,14 @@ export default function ProjectList() {
                         />
                     </button> : null}
             </div>
-            <div className="pt-8 px-4 sm:px-12 md:px-24 lg:px-32 overflow-hidden">
+            <div className="pt-8 px-8 overflow-hidden">
                 <div ref={containerRef} className="flex gap-8 overflow-x-auto">
                     {
                         projects.map(({ title, description, logo }: ProjectDataType) => <Thumbnail key={title} title={title} description={description} logo={logo} />)
                     }
                 </div>
             </div>
-            <div className="relative h-36 w-36">
+            <div className="relative h-36 w-36 min-w-10">
                 {scrollRight ?
                     <button onClick={scrollRightHandler}>
                         <Image

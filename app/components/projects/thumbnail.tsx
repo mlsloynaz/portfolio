@@ -12,7 +12,7 @@ export default function Thumbnail({ title, description, logo }: ThumbnailProp) {
                 <p className="text-sm text-gray-400">{description}</p>
             </div>
             <div className="flex justify-between">
-                <Link className="text-md text-grey-800 decoration-1" href={`project/${title}`}>
+                <Link className="text-md text-grey-800 underline underline-offset-4 decoration-1" href={`project/${title}`}>
                     Learn more
                 </Link>
                 <div className="relative h-8 w-8">
