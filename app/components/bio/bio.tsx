@@ -4,7 +4,7 @@ import profilePic from '/public/images/profile-pic.png'
 export default function Bio() {
     return (
         <div id="about-section" className="flex flex-col w-full ">
-            <div className="flex flex-col p-4  bg-portfolio bg-cover bg-center text-stone-100">
+            <div className="flex flex-col p-4 rounded-lg bg-portfolio bg-cover bg-center text-stone-100">
                 <div className="flex gap-2 items-center">
                     <div className="flex-1">
                         <p className="text-2xl py-8">HI, I am Maria Sierra Loynaz </p>

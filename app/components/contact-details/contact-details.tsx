@@ -5,7 +5,7 @@ export default function ContactDetails() {
         <div id="contact-info-section" className="flex flex-col w-full h-full pb-8">
             <div className="flex flex-col h-full px-4 text-grey-700 ">
                 <h2 className="text-2xl pb-8">Contact info</h2>
-                <div className="flex bg-gradient-to-b from-blue-800 to-gray-700 text-stone-100 rounded-lg p-4 justify-around items-center">
+                <div className="flex bg-portfolio bg-cover bg-center text-stone-100 rounded-lg p-4 justify-around items-center">
                     <div>
                         <dl>
                             <dt className="text-xl">Email</dt>
