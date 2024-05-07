@@ -19,7 +19,9 @@ export default function RootLayout({
         <div className="relative h-32">
           <Header />
         </div>
-        {children}
+        <div className="flex flex-col items-center">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>

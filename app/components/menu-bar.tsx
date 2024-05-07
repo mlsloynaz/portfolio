@@ -13,7 +13,6 @@ export default function MenuBar() {
         setIsOpen(!isOpen);
     };
 
-
     return (
         <>
             <div className="flex justify-between items-center h-20 px-8 md:px-28 py-4 bg-stone-50">

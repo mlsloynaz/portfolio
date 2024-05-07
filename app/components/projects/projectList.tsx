@@ -61,8 +61,8 @@ export default function ProjectList() {
     };
 
     return (
-        <div className="flex sm:px-5 items-center">
-            <div className="relative h-36 w-36 min-w-10 transform rotate-180">
+        <div className="flex items-center justify-between">
+            <div className="relative h-12 w-12 transform rotate-180">
                 {scrollLeft > 0 ?
                     <button onClick={scrollLeftHandler}>
                         <Image
@@ -73,14 +73,14 @@ export default function ProjectList() {
                         />
                     </button> : null}
             </div>
-            <div className="pt-8 px-8 overflow-hidden">
+            <div className="pt-8 px-4 overflow-hidden w-[248px] sm:w-[488px] md:w-[728px]">
                 <div ref={containerRef} className="flex gap-8 overflow-x-auto">
                     {
                         projects.map(({ title, description, logo }: ProjectDataType) => <Thumbnail key={title} title={title} description={description} logo={logo} />)
                     }
                 </div>
             </div>
-            <div className="relative h-36 w-36 min-w-10">
+            <div className="relative h-12 w-12">
                 {scrollRight ?
                     <button onClick={scrollRightHandler}>
                         <Image
