@@ -1,4 +1,4 @@
-import { ProjectDataType } from "@/app/definitions/projectDataType";
+import { ProjectDataType } from "@/app/utils/definitions/projectDataType";
 import Image from "next/image";
 import Link from 'next/link';
 

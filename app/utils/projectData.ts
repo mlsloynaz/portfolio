@@ -1,4 +1,4 @@
-import { ProjectDataType } from "@/definitions/projectDataType";
+import { ProjectDataType } from "@/app/utils/definitions/projectDataType";
 
 export const projectData: ProjectDataType[] =[
     {

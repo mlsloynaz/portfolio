@@ -1,6 +1,6 @@
 export default function ProjectDetails() {
     return (
-        <div className="flex flex-col mt-32 p-4 md:px-28">
+        <div className="flex flex-col p-4 md:px-28">
              <p className="text-3xl bg-stone-200 rounded-lg p-4 text-slate-900">title</p>
             <div className="flex flex-col md:flex-row md:justify-center py-8 gap-4 h-96">
                 <div className="flex flex-col w-60 md:w-96 px-4 justify-between">
