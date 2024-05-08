@@ -3,5 +3,9 @@
         "activityBar.background": "#0C3420",
         "titleBar.activeBackground": "#10492D",
         "titleBar.activeForeground": "#F4FDF9"
-    }
+    },
+    "cSpell.words": [
+        "libsql",
+        "TURSO"
+    ]
 }
