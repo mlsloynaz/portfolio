@@ -1,6 +1,5 @@
 generator client {
   provider        = "prisma-client-js"
-  previewFeatures = ["driverAdapters"]
 }
 
 datasource db {
@@ -12,7 +11,7 @@ model ContactMe {
   id        Int       @id @default(autoincrement())
   createdAt DateTime  @default(now())
   name      String?
-  email     String    @unique
+  email     String
   subject   String?
   message   String
 }
