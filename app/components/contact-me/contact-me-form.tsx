@@ -1,8 +1,10 @@
 "use client"
 
 import { createContactMe, ContactFormState } from "@/actions/create-contact-me";
-import { useFormState, useFormStatus } from "react-dom";
-import { MLButton } from "../ml-button";
+import { useFormState } from "react-dom";
+
+import { SubmitButton } from "./submitButton";
+import { useRef } from "react";
 
 const initialState: ContactFormState = {
     name: '',
@@ -13,11 +15,16 @@ const initialState: ContactFormState = {
 
 export function ContactMeForm() {
     const [actionResult, formAction] = useFormState(createContactMe, initialState);
-
     const { operationResultMessage, errors, name, email, subject, message } = actionResult
+    const formRef = useRef<HTMLFormElement>(null);
 
     return (
-        <form className="" action={formAction}>
+        <form ref={formRef} action={(formData) => {
+            formAction(formData)
+            if (formRef.current)
+                formRef.current?.reset()
+        }}
+        >
             <div className="mb-5">
                 <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
                 <input type="name" id="name" name="name" defaultValue={name} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-blue-800 focus:ring-2  block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Name LastName" />
@@ -60,7 +67,7 @@ export function ContactMeForm() {
                     </>
                 )}
             </div>
-            <MLButton type="submit" label="Submit" />
+            <SubmitButton label="Submit" />
         </form >
     )
 }

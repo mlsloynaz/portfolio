@@ -3,6 +3,7 @@
 import prisma from "@/db";
 import {ZodError, z} from "zod";
 
+
 export type ContactFormState = {
         name?:string;
         email:string;
@@ -39,7 +40,6 @@ export async function createContactMe(
     }catch(error){
         console.log(error)
         if (error instanceof ZodError) {
-            console.log({ validationErrors: error.errors });
             return {
                 ...prevState,
                 errors: error.errors.map((err) =>
@@ -50,8 +50,8 @@ export async function createContactMe(
         }
     }
     if(!validator) return{
-            ...prevState,
-            operationResultMessage: "Validation error"
+        ...prevState,
+        operationResultMessage: "Validation error"
     }
 
     try {

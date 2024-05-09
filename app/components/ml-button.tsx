@@ -13,18 +13,17 @@ interface MLButtonProps extends React.HTMLProps<HTMLButtonElement> {
 
 export function MLButton(props: MLButtonProps) {
     const classButtonType = props.secondary ? 'bg-white hover:bg-slate-200' : '';
-    const classDisabled = props.disabled ? 'disabled' : '';
+    const classDisabled = props.disabled ? 'text-gray-400 bg-gray-100 ' : '';
 
     function handleClick(event: React.MouseEvent<HTMLButtonElement>) {
         if (!props.disabled && props.onClick) {
             props.onClick(event);
         }
     }
-    const classButton="button-blue"
-           
+    const classButton = "button-blue"
     return (
         <div data-test={props.dataTest} className={props.className}>
-             <button
+            <button
                 {...props}
                 onClick={handleClick}
                 className={`${classDisabled} ${classButton} ${classButtonType}`}
