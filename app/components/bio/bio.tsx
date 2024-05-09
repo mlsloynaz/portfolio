@@ -22,7 +22,6 @@ export default function Bio() {
                     </div>
                 </div>
                 <p className="text-l lg:max-w-[70%]">Experienced Web developer with a strong focus on JavaScript, specializing in React, Typescript, NodeJs.</p>
-
             </div>
             <div className="flex flex-col h-full text-grey-700 ">
                 <p className="text-2xl py-8">Flexible, passionate and quick learner</p>
