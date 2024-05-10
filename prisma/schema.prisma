@@ -1,0 +1,39 @@
+generator client {
+  provider        = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model ContactMe {
+  id        Int       @id @default(autoincrement())
+  createdAt DateTime  @default(now())
+  name      String?
+  email     String
+  subject   String?
+  message   String
+}
+
+model Skill {
+  id       Int       @id @default(autoincrement())
+  name     String
+  logoUrl     String
+  projects Project[] @relation("ProjectSkills")
+}
+
+model Project {
+  id            Int       @id @default(autoincrement())
+  name          String
+  description   String?
+  assets        Asset[]
+  skills        Skill[]   @relation("ProjectSkills")
+}
+
+model Asset {
+  id            Int       @id @default(autoincrement())
+  assetUrl      String
+  project_id    Int
+  project       Project @relation(fields: [project_id], references: [id])
+}
