@@ -9,7 +9,6 @@ const MenuIcon = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const handleClick = () => {
-        console.log('click on button')
         setIsOpen(!isOpen);
     };
 
@@ -32,7 +31,6 @@ const MenuIcon = () => {
                         }`}
                 ></div>
             </button>
-   
     );
 };
 
