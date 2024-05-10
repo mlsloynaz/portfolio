@@ -6,6 +6,7 @@ import { projectData } from '@/utils/projectData'
 import { ProjectDataType } from "@/app/utils/definitions/projectDataType";
 import chevron from '/public/images/chevron.svg'
 import Thumbnail from './thumbnail';
+import {Projects as t} from  '@/utils/resourceContent';
 
 const SCROLL_AMOUNT = 240
 
@@ -66,7 +67,7 @@ export default function ProjectList() {
                     <button onClick={scrollLeftHandler}>
                         <Image
                             src={chevron}
-                            alt="go right"
+                            alt={t.goRightA11y}
                             layout='fill'
                             className="object-contain"
                         />
@@ -84,7 +85,7 @@ export default function ProjectList() {
                     <button onClick={scrollRightHandler}>
                         <Image
                             src={chevron}
-                            alt="go left"
+                            alt={t.goLeftA11y}
                             layout='fill'
                             className='object-contain'
                         />

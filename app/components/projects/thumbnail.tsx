@@ -1,6 +1,7 @@
 import { ProjectDataType } from "@/app/utils/definitions/projectDataType";
 import Image from "next/image";
 import Link from 'next/link';
+import {Projects as t} from  '@/utils/resourceContent';
 
 type ThumbnailProp = ProjectDataType
 
@@ -13,7 +14,7 @@ export default function Thumbnail({ title, description, logo }: ThumbnailProp) {
             </div>
             <div className="flex justify-between">
                 <Link className="text-md text-grey-800 underline underline-offset-4 decoration-1" href={`project/${title}`}>
-                    Learn more
+                    {t.learnMore}
                 </Link>
                 <div className="relative h-8 w-8">
                     <Image
