@@ -1,18 +1,19 @@
 "use server";
 
 import prisma from "@/db";
-import { z} from "zod";
-import { EmailData } from "@/definitions/contactMeTypes";
+import { z } from "zod";
+import { EmailData, ResultType, ResultTypeEnum } from "@/definitions/contactMeTypes";
 import { sendEmailToMe, sendEmailToUser } from "@/utils/email/sendEmail";
 
 export type ContactFormState = EmailData & {
-        errors?:{
-            name?: string[] ;
-            email?: string[] ;
-            subject?: string[];
-            message?: string[];
-        };
-        operationResultMessage?:string;
+    resetKey:string
+    errors?:{
+        name?: string[] ;
+        email?: string[] ;
+        subject?: string[];
+        message?: string[];
+    };
+    result?:{type:ResultType , message:string};
 };
 
 export async function createContactMe(
@@ -43,7 +44,7 @@ export async function createContactMe(
         return {
             ...prevState,
             errors: validatedFields.error.flatten().fieldErrors,
-            operationResultMessage: 'Error validation',
+            result:{message: 'Error validation', type:ResultTypeEnum.ERROR},
         };
     }
 
@@ -73,12 +74,13 @@ export async function createContactMe(
         return {
             ...prevState,
             errors:{},
-            operationResultMessage: "Email has been sent"
-        };
+            result:{message: 'Email has been sent', type:ResultTypeEnum.SUCCESS},
+            resetKey:validatedFields.data.email
+        }
     } catch (error) {
         return {
             ...prevState,
-            operationResultMessage: "Submit error"
+            result:{message: 'Submit error', type:ResultTypeEnum.ERROR}
         };
     }
 }
