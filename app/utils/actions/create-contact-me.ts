@@ -24,14 +24,13 @@ export async function createContactMe(
     const message = formData.get('message');
     const name = formData.get('name');
     const subject = formData.get('subject');
-
+    
     const mySchema = z.object({
         email: z.coerce.string().min(1, "The email is required").email("The email is invalid"),
         message: z.coerce.string().min(1, "The message is required"),
         name: z.coerce.string(),
         subject: z.coerce.string()
     });
-
 
     const validatedFields= mySchema.safeParse({
         email: email,
@@ -47,6 +46,7 @@ export async function createContactMe(
             result:{message: 'Error validation', type:ResultTypeEnum.ERROR},
         };
     }
+
     const emailPayloadToMe = {
         email: validatedFields.data.email,
         message: validatedFields.data.message,
@@ -66,12 +66,6 @@ export async function createContactMe(
 
         await sendEmailToUser(emailPayloadToUser)
 
-        return {
-            ...prevState,
-            errors:{},
-            result:{message: 'Email has been sent', type:ResultTypeEnum.SUCCESS},
-            resetKey:validatedFields.data.email
-        }
     } catch (error) {
         console.log(error)
         errorSendingEmails=true;
@@ -96,6 +90,12 @@ export async function createContactMe(
             };
         }
     }
- 
+
+    return {
+        ...prevState,
+        errors:{},
+        result:{message: 'Email has been sent', type:ResultTypeEnum.SUCCESS},
+        resetKey:validatedFields.data.email
+    }
 }
 
