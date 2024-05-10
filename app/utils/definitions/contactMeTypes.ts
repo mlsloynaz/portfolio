@@ -5,3 +5,10 @@ export type EmailData={
     subject?:string;
     message: string;
 }
+
+export enum ResultTypeEnum {
+    SUCCESS= "success",
+    ERROR= "error",
+    WARNING= "warning"
+}
+export type ResultType =  ResultTypeEnum.SUCCESS| ResultTypeEnum.ERROR| ResultTypeEnum.WARNING;
