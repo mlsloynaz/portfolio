@@ -9,7 +9,6 @@ export default function MenuBar() {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
-        console.log('click on menu')
         setIsOpen(!isOpen);
     };
 

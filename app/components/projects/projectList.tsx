@@ -26,7 +26,6 @@ export default function ProjectList() {
         const handleScroll = () => {
             const scrollLeft = container.scrollLeft;
             const scrollRight = container.scrollWidth - container.clientWidth - scrollLeft;
-            console.log({ scrollRight })
             setScrollLeft(scrollLeft);
             setScrollRight(scrollRight)
         };

@@ -1,15 +1,17 @@
 "use server";
 
 import prisma from "@/db";
-import {ZodError, z} from "zod";
+import { z} from "zod";
+import { EmailData } from "@/definitions/contactMeTypes";
+import { sendEmailToMe, sendEmailToUser } from "@/utils/email/sendEmail";
 
-
-export type ContactFormState = {
-        name?:string;
-        email:string;
-        subject?:string;
-        message: string;
-        errors?: string[];
+export type ContactFormState = EmailData & {
+        errors?:{
+            name?: string[] ;
+            email?: string[] ;
+            subject?: string[];
+            message?: string[];
+        };
         operationResultMessage?:string;
 };
 
@@ -28,51 +30,55 @@ export async function createContactMe(
         name: z.coerce.string(),
         subject: z.coerce.string()
     });
-    let validator
-  
-    try{
-        validator= mySchema.parse({
-            email: email,
-            message: message,
-            name: name,
-            subject: subject,
-        });
-    }catch(error){
-        console.log(error)
-        if (error instanceof ZodError) {
-            return {
-                ...prevState,
-                errors: error.errors.map((err) =>
-                    err.message as string
-                ),
-                operationResultMessage: 'Error validation',
-            };
-        }
-    }
-    if(!validator) return{
-        ...prevState,
-        operationResultMessage: "Validation error"
+
+
+    const validatedFields= mySchema.safeParse({
+        email: email,
+        message: message,
+        name: name,
+        subject: subject,
+    });
+
+    if(!validatedFields.success){
+        return {
+            ...prevState,
+            errors: validatedFields.error.flatten().fieldErrors,
+            operationResultMessage: 'Error validation',
+        };
     }
 
     try {
+        const emailPayloadToMe = {
+            email: validatedFields.data.email,
+            message: validatedFields.data.message,
+            subject: validatedFields.data.subject,
+            name: validatedFields.data.name,
+        }
+
+        const emailPayloadToUser= {
+            email: validatedFields.data.email,
+            message: "received", // this ios not supposed to be displayed, html created instead
+            subject: "Thank you for contacting me!",
+            name: validatedFields.data.name
+        }
+
         await prisma.contactMe.create({
-            data:{
-                email: validator.email,
-                message: validator.message,
-                subject: validator.subject,
-                name: validator.name ,
-            }
+            data : {...emailPayloadToMe}
         });
+
+        await sendEmailToMe(emailPayloadToMe)
+
+        await sendEmailToUser(emailPayloadToUser)
+
         return {
             ...prevState,
-            errors:[],
-            operationResultMessage: ""
+            errors:{},
+            operationResultMessage: "Email has been sent"
         };
     } catch (error) {
-        console.log(error);
         return {
             ...prevState,
-            operationResultMessage: "Server error"
+            operationResultMessage: "Submit error"
         };
     }
 }
