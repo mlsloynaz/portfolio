@@ -21,7 +21,7 @@ export default function Thumbnail({ title, shortDescription, logo }: ThumbnailPr
                 </Link>
                 <div className="relative h-8 w-8">
                     <Image
-                        src={`/images/${logo}`}
+                        src={`/images/company/${logo}`}
                         alt={title}
                         layout='fill'
                         className='object-contain'

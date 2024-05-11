@@ -59,7 +59,7 @@ export const projectData: ProjectDataType[] =[
         // assets: ['images/project/nokia1'],
         skills: ['git'],
         company:"Nokia",
-        years:[2017,2019]
+        years:[2018,2019]
     },
     {
         title:"ToolboxApp",
@@ -69,7 +69,7 @@ export const projectData: ProjectDataType[] =[
         // assets: ['images/project/clubassist1'],
         skills: ['git'],
         company:"Club Assist",
-        years:[2018,2019]
+        years:[2017,2018]
     },
     {
         title:"FitmentPortal",
@@ -79,7 +79,7 @@ export const projectData: ProjectDataType[] =[
         // assets: ['images/project/clubassist2'],
         skills: ['git'],
         company:"Club Assist",
-        years:[2018,2019]
+        years:[2017,2018]
     },
     {
         title:"Online Check-in ",
@@ -89,47 +89,47 @@ export const projectData: ProjectDataType[] =[
         // assets: ['images/project/royal2'],
         skills: ['git'],
         company:"Club Assist",
-        years:[2018,2019]
+        years:[2016,2017]
     },
     {
         title:"Barbie",
         shortDescription:"Website",
         description: "New Barbie.com Website",
-        logo: 'fuel.png',
+        logo: 'fuel-logo.png',
         // assets: ['images/project/fuel01'],
         skills: ['git'],
         company:"Fuel youth",
-        years:[2018,2019]
+        years:[2013,2016]
     },
     {
         title:"Warner Bros Kids",
         shortDescription:"Website",
         description: "New WBKids.com Website",
-        logo: 'fuel.png',
+        logo: 'fuel-logo.png',
         // assets: ['images/project/fuel02'],
         skills: ['git'],
         company:"Fuel youth",
-        years:[2018,2019]
+        years:[2013,2016]
     },
     {
         title:"XFire",
         shortDescription:"Website",
         description: "Website",
-        logo: 'fuel.png',
+        logo: 'fuel-logo.png',
         // assets: ['images/project/fuel03'],
         skills: ['git'],
         company:"Fuel youth",
-        years:[2018,2019]
+        years:[2013,2016]
     },
     {
         title:"Justice App",
         shortDescription:"Website",
         description: "Website",
-        logo: 'fuel.png',
+        logo: 'fuel-logo.png',
         // assets: ['images/project/fuel04'],
         skills: ['git'],
         company:"Fuel youth",
-        years:[2018,2019]
+        years:[2013,2016]
     },
     {
         title:"OpenERP",
@@ -139,7 +139,7 @@ export const projectData: ProjectDataType[] =[
         // assets: ['images/project/jitisoft01'],
         skills: ['git'],
         company:"Jitisoft",
-        years:[2018,2019]
+        years:[2012,2013]
     },
     {
         title:"Customer",
@@ -149,6 +149,6 @@ export const projectData: ProjectDataType[] =[
         //assets: ['images/project/jitisoft02'],
         skills: ['git'],
         company:"Jitisoft",
-        years:[2018,2019]
+        years:[2012,2013]
     },
 ]
