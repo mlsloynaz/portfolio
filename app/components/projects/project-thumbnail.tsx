@@ -2,13 +2,13 @@ import Image from "next/image";
 import Link from 'next/link';
 import {Projects as t} from  '@/utils/resourceContent';
 
-type ThumbnailProp = {
+type ProjectThumbnailProps = {
     title:string;
     shortDescription:string;
     logo:string;
 }
 
-export default function Thumbnail({ title, shortDescription, logo }: ThumbnailProp) {
+export default function ProjectThumbnail({ title, shortDescription, logo }: ProjectThumbnailProps) {
     return (
         <div className="flex flex-col shrink-0 grow-0 h-48 w-52 bg-[#F6F1E7] p-4 justify-between rounded-lg">
             <div id="projects" className="flex flex-col">

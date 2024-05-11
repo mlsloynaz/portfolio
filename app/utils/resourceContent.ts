@@ -62,7 +62,7 @@ export const Projects={
 }
 
 export const ProjectDetail={
-    year:"Year",
-    company:"Company:",
+    years:"Years: ",
+    company:"Company: ",
     skills:"Skills"
 }

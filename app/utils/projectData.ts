@@ -1,7 +1,8 @@
 import { ProjectDataType } from "@/app/utils/definitions/projectDataType";
 
-export const projectData: ProjectDataType[] =[
+export const projectData: Record<string, ProjectDataType>=
     {
+    "QoreAudit and QoreMail app":{
         title:"QoreAudit and QoreMail app",
         shortDescription:"Web application",
         description:"Web applications for monitoring the status of a chain of process performed by QoreAudit, the web app was ready to be a PWA",
@@ -11,7 +12,7 @@ export const projectData: ProjectDataType[] =[
         company:"Coginov",
         years:[2022,2023,2024]
     },
-    {
+    "QoreUltima SharePoint app":{
         title:"QoreUltima SharePoint app",
         shortDescription:"Sharepoint extension",
         description:"Sharepoint extension that allows the data stored in Sharepoint to be transferred to QoreUltima(Content processing application)",
@@ -21,7 +22,7 @@ export const projectData: ProjectDataType[] =[
         company:"Coginov",
         years:[2023,2024]
     },
-    {
+    "Signup flow":{
         title:"Signup flow",
         shortDescription:"Shopify module",
         description:"Several A/B testing of each step of the signup flow",
@@ -31,7 +32,7 @@ export const projectData: ProjectDataType[] =[
         company:"Shopify",
         years:[2021,2023]
     },
-    {
+    "Redesign of de plan and prices page":{
         title:"Redesign of de plan and prices page",
         shortDescription:"Shopify page",
         description: "A/B testing for three variants of the 'Plan and Prices' Shopify page",
@@ -41,7 +42,7 @@ export const projectData: ProjectDataType[] =[
         company:"Shopify",
         years:[2020,2021]
     },
-    {
+    "Export/Import Shopify App":{
         title:"Export/Import Shopify App",
         shortDescription:"Shopify app",
         description: "Shopify app for import/export data from/to the platform of your choice",
@@ -51,7 +52,7 @@ export const projectData: ProjectDataType[] =[
         company:"Shopify",
         years:[2019,2020]
     },
-    {
+    "Service enablement web app":{
         title:"Service enablement web app",
         shortDescription:"Web application",
         description: "Creation of a new Service enablement web app",
@@ -61,7 +62,7 @@ export const projectData: ProjectDataType[] =[
         company:"Nokia",
         years:[2018,2019]
     },
-    {
+    "ToolboxApp":{
         title:"ToolboxApp",
         shortDescription:"Mobile app",
         description: "Creation of a mobile app that facilitates the search of a battery",
@@ -71,7 +72,7 @@ export const projectData: ProjectDataType[] =[
         company:"Club Assist",
         years:[2017,2018]
     },
-    {
+    "FitmentPortal":{
         title:"FitmentPortal",
         shortDescription:"Application",
         description: "Maintenance tasks of the Fitment portal",
@@ -81,8 +82,8 @@ export const projectData: ProjectDataType[] =[
         company:"Club Assist",
         years:[2017,2018]
     },
-    {
-        title:"Online Check-in ",
+    "Online Check-in":{
+        title:"Online Check-in",
         shortDescription:"Module for Web app",
         description: "Develop a new Online check-in experience, with the purpose to attract more travelers to use it",
         logo: 'royal-logo.png',
@@ -91,7 +92,7 @@ export const projectData: ProjectDataType[] =[
         company:"Club Assist",
         years:[2016,2017]
     },
-    {
+    Barbie:{
         title:"Barbie",
         shortDescription:"Website",
         description: "New Barbie.com Website",
@@ -101,7 +102,7 @@ export const projectData: ProjectDataType[] =[
         company:"Fuel youth",
         years:[2013,2016]
     },
-    {
+    "Warner Bros Kids":{
         title:"Warner Bros Kids",
         shortDescription:"Website",
         description: "New WBKids.com Website",
@@ -111,7 +112,7 @@ export const projectData: ProjectDataType[] =[
         company:"Fuel youth",
         years:[2013,2016]
     },
-    {
+    "XFire":{
         title:"XFire",
         shortDescription:"Website",
         description: "Website",
@@ -121,7 +122,7 @@ export const projectData: ProjectDataType[] =[
         company:"Fuel youth",
         years:[2013,2016]
     },
-    {
+    "Justice App":{
         title:"Justice App",
         shortDescription:"Website",
         description: "Website",
@@ -131,7 +132,7 @@ export const projectData: ProjectDataType[] =[
         company:"Fuel youth",
         years:[2013,2016]
     },
-    {
+    "OpenERP":{
         title:"OpenERP",
         shortDescription:"Internal application",
         logo: 'jitisoft-logo.png',
@@ -141,7 +142,7 @@ export const projectData: ProjectDataType[] =[
         company:"Jitisoft",
         years:[2012,2013]
     },
-    {
+    "Customer":{
         title:"Customer",
         shortDescription:"App module",
         description:"Module that collect all related information of the client",
@@ -150,5 +151,5 @@ export const projectData: ProjectDataType[] =[
         skills: ['git'],
         company:"Jitisoft",
         years:[2012,2013]
-    },
-]
+    }
+}
