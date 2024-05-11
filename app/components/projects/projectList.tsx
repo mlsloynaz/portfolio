@@ -76,7 +76,7 @@ export default function ProjectList() {
             <div className="pt-8 px-4 overflow-hidden w-[248px] sm:w-[488px] md:w-[728px]">
                 <div ref={containerRef} className="flex gap-8 overflow-x-auto">
                     {
-                        projects.map(({ title, description, logo }: ProjectDataType) => <Thumbnail key={title} title={title} description={description} logo={logo} />)
+                        projects.map(({ title, shortDescription, logo }: ProjectDataType) => <Thumbnail key={title} title={title} shortDescription={shortDescription} logo={logo} />)
                     }
                 </div>
             </div>
