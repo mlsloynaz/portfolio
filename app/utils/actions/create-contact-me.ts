@@ -4,6 +4,7 @@ import prisma from "@/db";
 import { z } from "zod";
 import { EmailData, ResultType, ResultTypeEnum } from "@/definitions/contactMeTypes";
 import { sendEmailToMe, sendEmailToUser } from "@/utils/email/sendEmail";
+import {ContactMe as t} from  '@/utils/resourceContent';
 
 export type ContactFormState = EmailData & {
     resetKey:string
@@ -24,10 +25,10 @@ export async function createContactMe(
     const message = formData.get('message');
     const name = formData.get('name');
     const subject = formData.get('subject');
-    
+
     const mySchema = z.object({
-        email: z.coerce.string().min(1, "The email is required").email("The email is invalid"),
-        message: z.coerce.string().min(1, "The message is required"),
+        email: z.coerce.string().min(1, t.errors.emailRequired).email(t.errors.emailInvalid),
+        message: z.coerce.string().min(1,t.errors.messageRequired),
         name: z.coerce.string(),
         subject: z.coerce.string()
     });
@@ -43,7 +44,7 @@ export async function createContactMe(
         return {
             ...prevState,
             errors: validatedFields.error.flatten().fieldErrors,
-            result:{message: 'Error validation', type:ResultTypeEnum.ERROR},
+            result:{message: t.resultMessage.validationError, type:ResultTypeEnum.ERROR},
         };
     }
 
@@ -58,8 +59,8 @@ export async function createContactMe(
     try {
         const emailPayloadToUser= {
             email: validatedFields.data.email,
-            message: "received", // this ios not supposed to be displayed, html created instead
-            subject: "Thank you for contacting me!",
+            message: "",
+            subject: t.emailContent.toUserSubject,
             name: validatedFields.data.name
         }
         await sendEmailToMe(emailPayloadToMe)
@@ -79,14 +80,14 @@ export async function createContactMe(
             return {
                 ...prevState,
                 errors:{},
-                result:{message: 'Info has been saved, you will receive a the next 24h', type:ResultTypeEnum.SUCCESS},
+                result:{message: t.resultMessage.infoSent, type:ResultTypeEnum.SUCCESS},
                 resetKey:validatedFields.data.email
             }
         }catch(error){
             console.log(error)
             return {
                 ...prevState,
-                result:{message: 'Error sending email and saving info, please try again later or use another way', type:ResultTypeEnum.ERROR}
+                result:{message: t.resultMessage.errorSendingEmail, type:ResultTypeEnum.ERROR}
             };
         }
     }
@@ -94,7 +95,7 @@ export async function createContactMe(
     return {
         ...prevState,
         errors:{},
-        result:{message: 'Email has been sent', type:ResultTypeEnum.SUCCESS},
+        result:{message: t.resultMessage.emailSent, type:ResultTypeEnum.SUCCESS},
         resetKey:validatedFields.data.email
     }
 }
