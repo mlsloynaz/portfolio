@@ -58,11 +58,11 @@ export const Projects={
     description:"Projects that I have participated in",
     goLeftA11y:"Go left",
     goRightA11y:"Go right",
-    learnMore:"learn more"
+    learnMore:"Learn more"
 }
 
 export const ProjectDetail={
-    year:"Year",
-    company:"Company:",
+    years:"Years: ",
+    company:"Company: ",
     skills:"Skills"
 }

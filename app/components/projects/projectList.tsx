@@ -3,10 +3,10 @@
 import { useEffect, useState, useRef } from 'react'
 import Image from "next/image";
 import { projectData } from '@/utils/projectData'
-import { ProjectDataType } from "@/app/utils/definitions/projectDataType";
+import { ProjectDataType } from "@/utils/definitions/projectDataType";
 import chevron from '/public/images/chevron.svg'
-import Thumbnail from './thumbnail';
-import {Projects as t} from  '@/utils/resourceContent';
+import Thumbnail from './project-thumbnail';
+import { Projects as t } from '@/utils/resourceContent';
 
 const SCROLL_AMOUNT = 240
 
@@ -15,7 +15,7 @@ export default function ProjectList() {
     const [scrollRight, setScrollRight] = useState(1);
     const containerRef = useRef(null);
 
-    const projects = projectData;
+    const projects = Object.values(projectData).map(({title, shortDescription, logo}: ProjectDataType) => {return {title, shortDescription, logo}})
 
     useEffect(() => {
         if (!containerRef.current) {
@@ -76,7 +76,7 @@ export default function ProjectList() {
             <div className="pt-8 px-4 overflow-hidden w-[248px] sm:w-[488px] md:w-[728px]">
                 <div ref={containerRef} className="flex gap-8 overflow-x-auto">
                     {
-                        projects.map(({ title, description, logo }: ProjectDataType) => <Thumbnail key={title} title={title} description={description} logo={logo} />)
+                        projects.map(({title, shortDescription, logo}) => <Thumbnail key={title} title={title} shortDescription={shortDescription} logo={logo} />)
                     }
                 </div>
             </div>
