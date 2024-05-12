@@ -61,8 +61,8 @@ export default function ProjectList() {
     };
 
     return (
-        <div className="flex items-center justify-between">
-            <div className="relative h-12 w-12 transform rotate-180">
+        <div className="flex relative items-center justify-center">
+            <div className="absolute h-12 w-12 transform rotate-180 left-0">
                 {scrollLeft > 0 ?
                     <button onClick={scrollLeftHandler}>
                         <Image
@@ -80,7 +80,7 @@ export default function ProjectList() {
                     }
                 </div>
             </div>
-            <div className="relative h-12 w-12">
+            <div className="absolute h-12 w-12 right-0">
                 {scrollRight ?
                     <button onClick={scrollRightHandler}>
                         <Image
