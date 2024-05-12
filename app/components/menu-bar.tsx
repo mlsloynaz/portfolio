@@ -14,7 +14,7 @@ export default function MenuBar() {
 
     return (
         <>
-            <div className="flex justify-between items-center h-20 px-8 md:px-28 py-4 bg-stone-50">
+            <div className="flex justify-between items-center h-20 px-8 md:px-28 py-4 bg-stone-50 bg-opacity-95">
                 <Link href="/">
                     <Image
                         src="/images/logo.png"
@@ -37,7 +37,7 @@ export default function MenuBar() {
             </div>
             {
                 isOpen ?
-                    <div className="fixed top-32 flex flex-col bg-slate-50 w-full">
+                    <div className="fixed top-32 flex flex-col bg-slate-50 bg-opacity-95 w-full">
                         <MenuItems />
                     </div> : null
             }
