@@ -5,14 +5,15 @@ import { useFormState } from "react-dom";
 
 import { SubmitButton } from "./submitButton";
 import FormResultStatus from "./form-result-status";
-import {ContactMe as t} from  '@/utils/resourceContent';
+import { ContactMe as t } from '@/utils/resourceContent';
+import Spinner from "./spinner";
 
 const initialState: ContactFormState = {
     name: '',
     email: '',
     subject: '',
     message: '',
-    resetKey:'',
+    resetKey: '',
 };
 
 export function ContactMeForm() {
@@ -24,27 +25,30 @@ export function ContactMeForm() {
 
     return (
         <form action={formAction} key={resetKey} >
-            <div className="mb-5 flex flex-col">
-                <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{t.nameLbl}</label>
-                <input type="text" id="name" name="name" defaultValue={name} className={`${inputClass} ${errors?.name ? errorClass : ""}`} placeholder={t.namePlaceholder} />
-                {errors?.name ? <span className="text-sm text-red-700">{errors?.name[0]}</span> : null}
+            <div className="relative" >
+                <div className="mb-5 flex flex-col">
+                    <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{t.nameLbl}</label>
+                    <input type="text" id="name" name="name" defaultValue={name} className={`${inputClass} ${errors?.name ? errorClass : ""}`} placeholder={t.namePlaceholder} />
+                    {errors?.name ? <span className="text-sm text-red-700">{errors?.name[0]}</span> : null}
+                </div>
+                <div className="mb-5 flex flex-col">
+                    <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{t.emailLbl}</label>
+                    <input type="email" name="email" id="email" defaultValue={email} className={`${inputClass} ${errors?.email ? errorClass : ""}`} placeholder={t.emailPlaceholder} />
+                    {errors?.email ? <span className="text-sm text-red-700">{errors.email[0]}</span> : null}
+                </div>
+                <div className="mb-5 flex flex-col">
+                    <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{t.subjectLbl}</label>
+                    <input type="text" name="subject" id="subject" defaultValue={subject} className={`${inputClass} ${errors?.subject ? errorClass : ""}`} />
+                    {errors?.subject ? <span className="text-sm text-red-700">{errors.subject[0]}</span> : null}
+                </div>
+                <div className="mb-5 flex flex-col">
+                    <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
+                    <textarea id="message" name="message" defaultValue={message} rows={2} cols={50} className={`${inputClass}  ${errors?.message ? errorClass : ""}`} />
+                    {errors?.message ? <span className="text-sm text-red-700">{errors.message[0]}</span> : null}
+                </div>
+                <Spinner />
             </div>
-            <div className="mb-5 flex flex-col">
-                <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{t.emailLbl}</label>
-                <input type="email" name="email" id="email" defaultValue={email} className={`${inputClass} ${errors?.email ? errorClass : ""}`} placeholder={t.emailPlaceholder} />
-                {errors?.email ? <span className="text-sm text-red-700">{errors.email[0]}</span> : null}
-            </div>
-            <div className="mb-5 flex flex-col">
-                <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{t.subjectLbl}</label>
-                <input type="text" name="subject" id="subject" defaultValue={subject} className={`${inputClass} ${errors?.subject ? errorClass : ""}`} />
-                {errors?.subject ? <span className="text-sm text-red-700">{errors.subject[0]}</span> : null}
-            </div>
-            <div className="mb-5 flex flex-col">
-                <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
-                <textarea id="message" name="message" defaultValue={message} rows={2} cols={50} className={`${inputClass}  ${errors?.message ? errorClass : ""}`} />
-                {errors?.message ? <span className="text-sm text-red-700">{errors.message[0]}</span> : null}
-            </div>
-            {result?<FormResultStatus  type={result.type} message={result.message} />:null}
+            {result ? <FormResultStatus type={result.type} message={result.message} /> : null}
             <SubmitButton label="Submit" />
         </form >
     )
