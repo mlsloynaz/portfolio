@@ -3,8 +3,8 @@ import { ContactDetails as t } from '@/utils/resourceContent';
 
 export default function ContactDetails() {
     return (
-        <div id="contact-info-section" className="flex flex-col h-full w-full bg-portfolio bg-cover bg-center text-stone-100 rounded-lg p-4 my-16 ">
-            <h2 className="text-2xl pb-8">{t.title}</h2>
+        <div id="contact-info-section" className="my-12 flex flex-col h-full w-full bg-portfolio bg-cover bg-center text-stone-100 rounded-lg  max-w-[1024px] p-6 sm:px-12">
+            <h2 className="text-5xl pb-8">{t.title}</h2>
             <div className="flex flex-col sm:flex-row gap-4 w-full justify-between  pb-4 sm:pb-8">
                 <dl>
                     <dt className="text-xl">{t.email}</dt>
