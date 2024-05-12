@@ -1,7 +1,9 @@
 
+"use clent"
+
 import Image from "next/image";
 import MenuBar from "./menu-bar";
-
+import { MenuProvider } from "./projects/MenuContext/menuContext";
 
 export default function Header() {
     return (
@@ -17,7 +19,9 @@ export default function Header() {
                     <p className="hidden md:block">( +1 ) 813-768-5545</p>
                 </a>
             </div>
-            <MenuBar/>
+            <MenuProvider>
+                <MenuBar />
+            </MenuProvider>
         </header>
     )
 }

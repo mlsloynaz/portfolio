@@ -1,9 +1,10 @@
-export  const header={
+export  const Header={
     about:"About",
     experience:"Experience",
-    contactDetails:"Contact info",
+    contactInfo:"Contact info",
     home:"Web developer",
-    portfolio:"Portfolio"
+    portfolio:"Portfolio",
+    contactMeBtn:"Contact me"
 }
 
 export const ContactDetails= {
