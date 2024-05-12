@@ -1,8 +1,8 @@
 export function Footer() {
     return (
-        <footer className="w-full bg-black px-8 md:px-28 py-4 text-stone-50">
-            <p className="text-xl pb-8">Credits</p>
-            <ul className="list-disc">
+        <footer className="w-full bg-black px-8 md:px-28 py-8 text-stone-50">
+            <p className="text-2xl pb-8">Credits</p>
+            <ul className="list-disc sm:columns-2">
                 <li>
                     <a href="https://iconscout.com/icons/angularjs" className="underlined underline-offset-2" target="_blank">Angularjs</a> by <a href="https://iconscout.com/contributors/icon-mafia" className="underlined underline-offset-2">Icon Mafia</a> on <a href="https://iconscout.com" className="text-sm">IconScout</a>
                 </li>
