@@ -24,6 +24,7 @@ export const ContactMe= {
     nameLbl:"Name",
     namePlaceholder:"Name LastName",
     subjectLbl:"Subject",
+    loading:"Loading...",
     errors: {
         emailInvalid:"Invalid email format",
         emailRequired: "Provide an email address is required",
