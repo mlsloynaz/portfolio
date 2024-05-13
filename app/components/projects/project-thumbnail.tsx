@@ -25,7 +25,6 @@ export default function ProjectThumbnail({ title, shortDescription, logo }: Proj
                         alt={title}
                         layout='fill'
                         className='object-contain'
-                        blurDataURL={`/public/images/blur-${logo}`}
                     />
                 </div>
             </div>
