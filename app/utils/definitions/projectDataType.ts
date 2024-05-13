@@ -3,9 +3,11 @@ export  type ProjectDataType = {
     shortDescription:string;
     description:string;
     logo:string;
-    skills?:string[]
-    assets?:[],
-    challenges?:[],
-    company:string,
-    years:number[]
+    skills?:string[];
+    image?: string;
+    challenges?:[];
+    company:string;
+    years:number[];
+    prevLink:string;
+    nextLink:string;
 }

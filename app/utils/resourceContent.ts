@@ -43,7 +43,6 @@ export const ContactMe= {
         validationError: "Invalid entry",
         errorSendingEmail: "Error sending email and saving info, please try again later or use another way"
     }
-
 }
 
 export const Bio= {
@@ -61,11 +60,12 @@ export const Projects={
     description:"Successfully completed a variety of projects ranging from e-commerce platforms to data visualization tools. Strong problem-solving abilities, with a focus on delivering robust and scalable solutions. Adept at working in agile environments and collaborating with cross-functional teams to achieve project goals",
     goLeftA11y:"Go left",
     goRightA11y:"Go right",
-    learnMore:"Learn more"
+    learnMore:"Learn more",
 }
 
 export const ProjectDetail={
     years:"Years: ",
     company:"Company: ",
-    skills:"Skills"
+    skills:"Skills",
+    goto:"navigate to"
 }

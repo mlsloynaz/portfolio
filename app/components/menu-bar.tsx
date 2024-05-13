@@ -5,7 +5,7 @@ import Image from "next/image";
 import MenuIcon from "./menu-icon";
 
 import {Header as t} from  '@/utils/resourceContent';
-import { useMenuContext } from "./projects/MenuContext/menuContext";
+import { useMenuContext } from "./MenuContext/menuContext";
 
 export default function MenuBar() {
    const {menuOpen, setMenuOpen} = useMenuContext()

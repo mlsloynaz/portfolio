@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 import MenuBar from "./menu-bar";
-import { MenuProvider } from "./projects/MenuContext/menuContext";
+import { MenuProvider } from "./MenuContext/menuContext";
 
 export default function Header() {
     return (
