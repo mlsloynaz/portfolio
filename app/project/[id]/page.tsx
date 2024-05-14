@@ -11,7 +11,7 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
     const yearsStr = years.join(', ');
 
     return (
-        <div className="flex flex-col p-4  max-w-[1024px] px-6 sm:px-12">
+        <div className="flex flex-col p-4  w-full max-w-[1024px] px-6 sm:px-12">
             <p className="text-3xl w-full bg-[#F6F1E7] rounded-lg p-4 text-slate-900">{title}</p>
             <Navigation prevLink={prevLink} nextLink={nextLink} />
             <div className="flex flex-col flex-1 items-center md:flex-row md:justify-center gap-4 h-full md:h-[450px] p-4 md:w-84">
@@ -47,6 +47,7 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
                 </p>
                 <p>{t.years} <span>{yearsStr}</span></p>
             </div>
+            <p className="text-2xl w-full bg-[#F6F1E7] rounded-lg p-4 text-slate-900">{t.skills}</p>
             <SkillList skills={skills} />
         </div>
     )
