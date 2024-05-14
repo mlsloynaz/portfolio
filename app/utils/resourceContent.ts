@@ -57,7 +57,7 @@ export const Bio= {
 
 export const Projects={
     title:"Experience",
-    description:"Successfully completed a variety of projects ranging from e-commerce platforms to data visualization tools. Strong problem-solving abilities, with a focus on delivering robust and scalable solutions. Adept at working in agile environments and collaborating with cross-functional teams to achieve project goals",
+    description:"Successfully completed a variety of projects ranging from e-commerce platforms to data visualization tools. Strong problem-solving abilities, with a focus on delivering robust and scalable solutions. Adept at working in agile environments and collaborating with cross-functional teams to achieve project goals.",
     goLeftA11y:"Go left",
     goRightA11y:"Go right",
     learnMore:"Learn more",
