@@ -11,7 +11,7 @@ export const projectData: Record<string, ProjectDataType>=
         skills: ['Git','Github','HTML','CSS','Javascript','Typescript', 'React', 'NodeJs', '.NET'],
         company:"Coginov",
         years:[2022,2023,2024],
-        prevLink:"/#experience-section",
+        prevLink:"",
         nextLink:"/project/QoreUltima SharePoint app",
     },
     "QoreUltima SharePoint app":{
@@ -151,6 +151,6 @@ export const projectData: Record<string, ProjectDataType>=
         company:"Jitisoft",
         years:[2012,2013],
         prevLink:"/project/XFire",
-        nextLink:"/project/QoreAudit and QoreMail app",
+        nextLink:"",
     }
 }
