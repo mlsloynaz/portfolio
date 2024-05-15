@@ -31,7 +31,7 @@ export const projectData: Record<string, ProjectDataType>=
         shortDescription:"Shopify module",
         description:"Implemented several rounds of A/B testing to optimize the signup flow for improved user acquisition and retention. Conducted tests on each step of the signup process to identify and implement changes that would reduce friction and increase conversion rates.",
         logo: 'shopify-logo.png',
-        image: 'sp-questionnaire.png',
+        image: 'sp-signup.png',
         skills: ['Git','Github','HTML','CSS','Javascript','Typescript', 'React', 'GraphQl', 'NodeJs'],
         company:"Shopify",
         years:[2021,2023],

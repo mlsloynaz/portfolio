@@ -23,7 +23,7 @@ export default function ProjectThumbnail({ title, shortDescription, logo }: Proj
                     <Image
                         src={`/images/company/${logo}`}
                         alt={title}
-                        layout='fill'
+                        fill
                         className='object-contain'
                     />
                 </div>

@@ -63,6 +63,9 @@ export function Footer() {
                 <li>
                     <a href="https://iconscout.com/icons/sencha" className="underline underline-offset-2 font-size-sm" target="_blank">Sencha</a> by <a href="https://iconscout.com/contributors/icon-mafia" className="underline underline-offset-2 font-size-sm" target="_blank">Icon Mafia</a>
                 </li>
+                <li>
+                <a href="https://iconscout.com/icons/linkedin" className="underline underline-offset-2" target="_blank">Linkedin</a> by <a href="https://iconscout.com/contributors/icon-mafia" className="underline underline-offset-2" target="_blank">Icon Mafia</a>
+                </li>
             </ul>
         </footer>
     )
