@@ -24,18 +24,18 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
                         src={`/images/project/${image}`}
                         alt="Picture of the project"
                         className='object-contain'
-                        layout="fill"
+                        fill
                     /> : <Image
                         src={`/images/project/default-image.png`}
                         alt="Default picture of a project"
                         className='object-contain'
-                        layout="fill"
+                        fill
                     />}
                 </div>
             </div>
             <div className="flex w-full text-l flex-col md:flex-row md:justify-between py-4 md:py-8 px-4">
                 <p className='flex items-center'>{t.company}
-                    <span className=" w-8 h-8 relative">
+                    <span className="flex items-center w-8 h-8 relative">
                         <Image
                             src={`/images/company/${logo}`}
                             alt=""
