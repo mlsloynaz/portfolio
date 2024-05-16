@@ -13,7 +13,10 @@ export const ContactDetails= {
     address:"Address",
     email:"Email",
     linkLbl:"Contact Me",
-    addressValue: "Valrico, Florida"
+    addressValue: "Valrico, Florida",
+    social:"Social media",
+    goToGitHub:"go to github Maria Sierra-Loynaz profile",
+    goToLinkedin:"go to Linkedin Maria Sierra-Loynaz profile"
 }
 
 export const ContactMe= {

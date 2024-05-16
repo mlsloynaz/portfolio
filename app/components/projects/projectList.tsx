@@ -25,7 +25,6 @@ export default function ProjectList() {
 
         const handleScroll = () => {
             const index = Math.round(container.scrollLeft / SCROLL_STEP);
-            console.log(index);
             setLastIndex(index);
         };
 
@@ -43,7 +42,6 @@ export default function ProjectList() {
 
         const container = containerRef.current as HTMLElement;
         const scrollQty = SCROLL_STEP * index
-        console.log({scrollQty , containerScrollLeft:container.scrollLeft})
         const newScrollLeft = scrollQty;
         container.scrollTo({ left: newScrollLeft, behavior: 'smooth' });
         setLastIndex(index);
