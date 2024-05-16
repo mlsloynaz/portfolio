@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
+import {Footer as t} from  '@/utils/resourceContent';
 
 export function Footer() {
     return (
         <footer className="w-full bg-black px-8 md:px-28 py-8 text-stone-50 text-sm">
-            <p className="text-2xl pb-8">Credits</p>
+            <p className="text-2xl pb-8">{t.title}</p>
             <div className="pb-4">
-                <p className="text-xl"> A big thank to</p>
+                <p className="text-xl">{t.thankTo}</p>
                 <ul>
                     <li>
                         <Link className="flex gap-2" href="https://www.linkedin.com/in/anabellorenzo/">
@@ -17,7 +18,8 @@ export function Footer() {
                 </ul>
             </div>
             <div>
-                <p className="text-xl"> Icons </p>
+                <p className="text-xl"> {t.icons} </p>
+                <Link className="sr-only" href="#main-content">{t.skip}</Link>
                 <ul className="list-disc columns-2 sm:columns-3 md:columns-4">
                     <li>
                         <a href="https://iconscout.com/icons/angularjs" className="underline underline-offset-2" target="_blank">Angularjs</a> by <a href="https://iconscout.com/contributors/icon-mafia" className="underline underline-offset-2">Icon Mafia</a> on <a href="https://iconscout.com" className="text-sm">IconScout</a>
@@ -84,7 +86,6 @@ export function Footer() {
                     </li>
                 </ul>
             </div>
-
         </footer>
     )
 }
