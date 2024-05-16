@@ -11,7 +11,7 @@ export function Footer() {
                 <ul>
                     <li>
                         <Link className="flex gap-2" href="https://www.linkedin.com/in/anabellorenzo/">
-                            <Image src="images/skills/linkedin-white.svg" width={15} height={15} alt="linkedin link" />
+                            <Image src="images/skills/linkedin-white.svg" width={15} height={15} className="h-full" alt="linkedin link" />
                             <span className="underline underline-offset-2" >Anabel Lorenzo Batista</span>
                         </Link>
                     </li>
