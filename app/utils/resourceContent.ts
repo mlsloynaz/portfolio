@@ -4,7 +4,16 @@ export  const Header={
     contactInfo:"Contact info",
     home:"Web developer",
     portfolio:"Portfolio",
-    contactMeBtn:"Contact me"
+    contactMeBtn:"Contact me",
+    gotoHome:"Go to home"
+}
+
+export  const Footer={
+    thankTo:" A big thank to",
+    gotoLinkedin:"go to Linkedin profile",
+    title:"Credits",
+    icons:"Icons",
+    skip:"Skip to main content"
 }
 
 export const ContactDetails= {
@@ -14,7 +23,7 @@ export const ContactDetails= {
     email:"Email",
     linkLbl:"Contact Me",
     addressValue: "Valrico, Florida",
-    social:"Social media",
+    social:"Professional Profiles",
     goToGitHub:"go to github Maria Sierra-Loynaz profile",
     goToLinkedin:"go to Linkedin Maria Sierra-Loynaz profile"
 }
@@ -49,6 +58,7 @@ export const ContactMe= {
 }
 
 export const Bio= {
+    titleSection:"About",
     hi: "Hi",
     title:"I am Maria Sierra-Loynaz",
     description:"Experienced Web developer with a strong focus on JavaScript, specializing in React, Typescript, NodeJs.",
@@ -70,5 +80,6 @@ export const ProjectDetail={
     years:"Years: ",
     company:"Company: ",
     skills:"Skills",
-    goto:"navigate to"
+    goto:"navigate to",
+    defaultPicAlt:"Default pic, generic website"
 }

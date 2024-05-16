@@ -16,11 +16,11 @@ export default function MenuBar() {
 
     return (
         <>
-            <div className="flex justify-between items-center h-20 px-8 md:px-28 py-4 bg-stone-50 bg-opacity-95">
+            <nav className="flex justify-between items-center h-20 px-8 md:px-28 py-4 bg-stone-50 bg-opacity-95">
                 <Link href="/">
                     <Image
                         src="/images/logo.png"
-                        alt="call me by phone"
+                        alt={t.gotoHome}
                         width={30}
                         height={30}
                         className="inline pr-2"
@@ -36,7 +36,7 @@ export default function MenuBar() {
                         <MenuIcon />
                     </div>
                 </div>
-            </div>
+            </nav>
             {
 
                 menuOpen ?

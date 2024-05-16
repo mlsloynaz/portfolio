@@ -4,7 +4,8 @@ import {Bio as t} from  '@/utils/resourceContent';
 
 export default function Bio() {
     return (
-        <div id="about-section" className="flex flex-col w-full items-center">
+        <section id="about-section" className="flex flex-col w-full items-center" aria-labelledby="title-about">
+            <h2 id="title-about" className="sr-only">{t.titleSection}</h2>
             <div className="flex flex-col w-full items-center bg-portfolio bg-cover bg-center text-stone-100">
                 <div className="flex  w-full items-center justify-between max-w-[1024px] px-6 pt-36 pb-8 sm:px-12 sm:pb-16 sm:pt-24">
                     <div>
@@ -29,6 +30,6 @@ export default function Bio() {
                 <p className="text-5xl pb-8">{`${t.secondaryBio.title}`}</p>
                 <p className="text-lg">{`${t.secondaryBio.description}`}</p>
             </div>
-        </div>
+        </section>
     )
 }
