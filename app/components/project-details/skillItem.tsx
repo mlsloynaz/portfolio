@@ -6,7 +6,7 @@ export function SkillItem({skillName}:{skillName:string}) {
     const {name , logoUrl}=skillData[skillName]
 
     return (
-        <p className='flex items-center px-4 py-2'>
+        <p tabIndex={0} className='flex items-center px-4 py-2'>
             <span className=" w-8 h-8 relative">
                 <Image
                     src={`/images/skills/${logoUrl}`}
