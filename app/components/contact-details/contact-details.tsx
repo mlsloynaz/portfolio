@@ -22,7 +22,7 @@ export default function ContactDetails() {
                         <dt className="text-xl">{t.phone}</dt>
                         <dd className="text-sm"><a href="tel:+18137685545">( +1 ) 813-768-5545</a></dd>
                     </dl>
-                    <dl>
+                    <dl tabIndex={0}>
                         <dt className="text-xl">{t.address}</dt>
                         <dd className="text-sm">
                             <p>{t.addressValue}</p>
