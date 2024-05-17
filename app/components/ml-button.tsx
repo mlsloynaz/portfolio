@@ -27,7 +27,6 @@ export function MLButton(props: MLButtonProps) {
                 {...props}
                 onClick={handleClick}
                 className={`${classDisabled} ${classButton} ${classButtonType}`}
-                aria-label={props.label}
                 disabled={props.disabled}
                 type={props.type || "button"}
             >
