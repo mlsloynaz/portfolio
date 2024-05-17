@@ -16,7 +16,7 @@ export function Navigation({ nextLink, prevLink }: NavigationProps) {
             {prevLink ? <Link href={prev}>
                 <Image
                     src={chevron}
-                    alt={`${t.goto} ${prev}`}
+                    alt={`${t.a11yGoto} ${prev}`}
                     width={16}
                     height={16}
                     className="rotate-180 inline"
@@ -27,7 +27,7 @@ export function Navigation({ nextLink, prevLink }: NavigationProps) {
                 <p className="inline px-2">Next</p>
                 <Image
                     src={chevron}
-                    alt={`${t.goto} ${next}`}
+                    alt={`${t.a11yGoto} ${next}`}
                     width={16}
                     height={16}
                     className="inline"

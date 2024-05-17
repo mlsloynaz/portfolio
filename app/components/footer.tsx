@@ -19,7 +19,7 @@ export function Footer() {
             </div>
             <div>
                 <p className="text-xl"> {t.icons} </p>
-                <Link className="sr-only" href="#main-content">{t.skip}</Link>
+                <Link className="sr-only" href="#main-content">{t.a11ySkipToMain}</Link>
                 <ul className="list-disc columns-2 sm:columns-3 md:columns-4">
                     <li>
                         <a href="https://iconscout.com/icons/angularjs" className="underline underline-offset-2" target="_blank">Angularjs</a> by <a href="https://iconscout.com/contributors/icon-mafia" className="underline underline-offset-2">Icon Mafia</a> on <a href="https://iconscout.com" className="text-sm">IconScout</a>
