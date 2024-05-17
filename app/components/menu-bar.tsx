@@ -4,15 +4,24 @@ import Link from "next/link";
 import Image from "next/image";
 import MenuIcon from "./menu-icon";
 
-import {Header as t} from  '@/utils/resourceContent';
+import { Header as t } from '@/utils/resourceContent';
 import { useMenuContext } from "./MenuContext/menuContext";
+import { useEffect, useState } from "react";
 
 export default function MenuBar() {
-   const {menuOpen, setMenuOpen} = useMenuContext()
-    
-   const handleMenuMobileClick=()=>{
+    const { menuOpen, setMenuOpen } = useMenuContext()
+    const [announcement, setAnnouncement] = useState('');
+
+    const handleMenuMobileClick = () => {
         setMenuOpen(false)
     }
+    useEffect(() => {
+        if (menuOpen) {
+            setAnnouncement(t.a11yMenuOpened);
+        } else {
+            setAnnouncement(t.a11yMenuClosed);
+        }
+    }, [menuOpen]);
 
     return (
         <>
@@ -20,7 +29,7 @@ export default function MenuBar() {
                 <Link href="/">
                     <Image
                         src="/images/logo.png"
-                        alt={t.gotoHome}
+                        alt={t.a11yGotoHome}
                         width={30}
                         height={30}
                         className="inline pr-2"
@@ -44,20 +53,23 @@ export default function MenuBar() {
                         <MenuItems />
                     </div> : null
             }
+            <div aria-live="polite" aria-atomic="true" className="sr-only">
+                {announcement}
+            </div>
         </>
     )
 }
 
 function MenuItems() {
     return (
-        <ul>
-            <li className="border-y border-gray-300 p-4 md:border-none md:inline">
+        <ul role="menu" >
+            <li role="menuitem" className="border-y border-gray-300 p-4 md:border-none md:inline">
                 <Link href="/">{t.about}</Link>
             </li>
-            <li className="border-y border-gray-300 p-4 md:border-none md:inline">
+            <li role="menuitem" className="border-y border-gray-300 p-4 md:border-none md:inline">
                 <Link href="/#experience-section">{t.experience}</Link>
             </li>
-            <li className="border-y border-gray-300 p-4 md:border-none md:inline">
+            <li role="menuitem" className="border-y border-gray-300 p-4 md:border-none md:inline">
                 <Link href="/#contact-info-section">{t.contactInfo}</Link>
             </li>
         </ul>

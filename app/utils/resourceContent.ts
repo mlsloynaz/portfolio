@@ -5,7 +5,10 @@ export  const Header={
     home:"Web developer",
     portfolio:"Portfolio",
     contactMeBtn:"Contact me",
-    gotoHome:"Go to home"
+    a11yGotoHome:"Go to home",
+    a11ySkipToMain:"Skip to main content",
+    a11yMenuOpened:"Menu opened",
+    a11yMenuClosed:"Menu closed"
 }
 
 export  const Footer={
@@ -13,7 +16,7 @@ export  const Footer={
     gotoLinkedin:"go to Linkedin profile",
     title:"Credits",
     icons:"Icons",
-    skip:"Skip to main content"
+    a11ySkipToMain:"Skip to main content"
 }
 
 export const ContactDetails= {
@@ -24,8 +27,8 @@ export const ContactDetails= {
     linkLbl:"Contact Me",
     addressValue: "Valrico, Florida",
     social:"Professional Profiles",
-    goToGitHub:"go to github Maria Sierra-Loynaz profile",
-    goToLinkedin:"go to Linkedin Maria Sierra-Loynaz profile"
+    a11yGoToGitHub:"go to github Maria Sierra-Loynaz profile",
+    a11yGoToLinkedin:"go to Linkedin Maria Sierra-Loynaz profile"
 }
 
 export const ContactMe= {
@@ -36,7 +39,7 @@ export const ContactMe= {
     nameLbl:"Name",
     namePlaceholder:"Name LastName",
     subjectLbl:"Subject",
-    loading:"Loading...",
+    loading:"Submit in progress...",
     errors: {
         emailInvalid:"Invalid email format",
         emailRequired: "Provide an email address is required",
@@ -71,8 +74,6 @@ export const Bio= {
 export const Projects={
     title:"Experience",
     description:"Successfully completed a variety of projects ranging from e-commerce platforms to data visualization tools. Strong problem-solving abilities, with a focus on delivering robust and scalable solutions. Adept at working in agile environments and collaborating with cross-functional teams to achieve project goals.",
-    goLeftA11y:"Go left",
-    goRightA11y:"Go right",
     learnMore:"Learn more",
 }
 
@@ -80,6 +81,6 @@ export const ProjectDetail={
     years:"Years: ",
     company:"Company: ",
     skills:"Skills",
-    goto:"navigate to",
-    defaultPicAlt:"Default pic, generic website"
+    a11yGoto:"navigate to",
+    a11yDefaultPicAlt:"Default pic, generic website"
 }

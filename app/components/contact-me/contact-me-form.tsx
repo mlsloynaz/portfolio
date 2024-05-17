@@ -14,11 +14,12 @@ const initialState: ContactFormState = {
     subject: '',
     message: '',
     resetKey: '',
+    resetError:0
 };
 
 export function ContactMeForm() {
     const [actionResult, formAction] = useFormState(createContactMe, initialState);
-    const { result, errors, name, email, subject, message, resetKey } = actionResult
+    const { result, errors, name, email, subject, message, resetKey, resetError } = actionResult
 
     const inputClass = "p-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-blue-800 focus:ring-2  block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
     const errorClass = "border border-red-700 bg-red-50"
@@ -28,27 +29,27 @@ export function ContactMeForm() {
             <div className="relative" >
                 <div className="mb-5 flex flex-col">
                     <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{t.nameLbl}</label>
-                    <input type="text" id="name" name="name" defaultValue={name} className={`${inputClass} ${errors?.name ? errorClass : ""}`} placeholder={t.namePlaceholder} />
-                    {errors?.name ? <span className="text-sm text-red-700">{errors?.name[0]}</span> : null}
+                    <input type="text" id="name" name="name" defaultValue={name} className={`${inputClass} ${errors?.name ? errorClass : ""}`} placeholder={t.namePlaceholder} aria-describedby={errors?.name ? "name-error" : undefined}/>
+                    {errors?.name ? <span id="name-error"  className="text-sm text-red-700" role="alert" aria-live="assertive">{errors?.name[0]}</span> : null}
                 </div>
                 <div className="mb-5 flex flex-col">
                     <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{t.emailLbl}</label>
-                    <input type="email" name="email" id="email" defaultValue={email} className={`${inputClass} ${errors?.email ? errorClass : ""}`} placeholder={t.emailPlaceholder} />
-                    {errors?.email ? <span className="text-sm text-red-700">{errors.email[0]}</span> : null}
+                    <input type="email" name="email" id="email" defaultValue={email} className={`${inputClass} ${errors?.email ? errorClass : ""}`} placeholder={t.emailPlaceholder} aria-describedby={errors?.email ? "email-error" : undefined} />
+                    {errors?.email ? <span id="email-error" className="text-sm text-red-700" role="alert" aria-live="assertive">{errors.email[0]}</span> : null}
                 </div>
                 <div className="mb-5 flex flex-col">
                     <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{t.subjectLbl}</label>
-                    <input type="text" name="subject" id="subject" defaultValue={subject} className={`${inputClass} ${errors?.subject ? errorClass : ""}`} />
-                    {errors?.subject ? <span className="text-sm text-red-700">{errors.subject[0]}</span> : null}
+                    <input type="text" name="subject" id="subject" defaultValue={subject} className={`${inputClass} ${errors?.subject ? errorClass : ""}`} aria-describedby={errors?.subject ? "subject-error" : undefined} />
+                    {errors?.subject ? <span id="subject-error" className="text-sm text-red-700" role="alert" aria-live="assertive">{errors.subject[0]}</span> : null}
                 </div>
                 <div className="mb-5 flex flex-col">
                     <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
-                    <textarea id="message" name="message" defaultValue={message} rows={2} cols={50} className={`${inputClass}  ${errors?.message ? errorClass : ""}`} />
-                    {errors?.message ? <span className="text-sm text-red-700">{errors.message[0]}</span> : null}
+                    <textarea id="message" name="message" defaultValue={message} rows={2} cols={50} className={`${inputClass}  ${errors?.message ? errorClass : ""}`} aria-describedby={errors?.message ? "message-error" : undefined}/>
+                    {errors?.message ? <span id="message-error" className="text-sm text-red-700" role="alert" aria-live="assertive">{errors.message[0]}</span> : null}
                 </div>
                 <Spinner />
             </div>
-            {result ? <FormResultStatus type={result.type} message={result.message} /> : null}
+            {result ? <FormResultStatus key={resetError} type={result.type} message={result.message} /> : null}
             <SubmitButton label="Submit" />
         </form >
     )

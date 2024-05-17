@@ -12,10 +12,10 @@ export default function ContactDetails() {
                     <dl>
                         <dt className="text-xl">{t.email}</dt>
                         <dd className="text-sm"><a href="mailto:your.email@example.com">mlsloynaz@gmail.com</a></dd>
-                        <dt className="text-xl pt-4">{t.social}</dt>
+                        <dt className="text-xl pt-4 pb-1">{t.social}</dt>
                         <dd className="flex gap-4">
-                            <Link href="https://github.com/mlsloynaz"><Image src="images/skills/github-white.svg" alt={t.goToGitHub} width={30} height={30} /></Link>
-                            <Link href="https://www.linkedin.com/in/maria-lourdes-sierra-loynaz-b907b58b"><Image src="images/skills/linkedin-white.svg" width={30} height={30} alt={t.goToLinkedin}/></Link>
+                            <Link href="https://github.com/mlsloynaz"><Image src="images/skills/github-white.svg" alt={t.a11yGoToGitHub} width={30} height={30} /></Link>
+                            <Link href="https://www.linkedin.com/in/maria-lourdes-sierra-loynaz-b907b58b"><Image src="images/skills/linkedin-white.svg" width={30} height={30} alt={t.a11yGoToLinkedin}/></Link>
                         </dd>
                     </dl>
                     <dl>

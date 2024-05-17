@@ -11,7 +11,7 @@ export function Footer() {
                 <ul>
                     <li>
                         <Link className="flex gap-2" href="https://www.linkedin.com/in/anabellorenzo/">
-                            <Image src="images/skills/linkedin-white.svg" width={15} height={15} alt="linkedin link" />
+                            <Image src="images/skills/linkedin-white.svg" width={15} height={15} className="h-full" alt="linkedin link" />
                             <span className="underline underline-offset-2" >Anabel Lorenzo Batista</span>
                         </Link>
                     </li>
@@ -19,7 +19,7 @@ export function Footer() {
             </div>
             <div>
                 <p className="text-xl"> {t.icons} </p>
-                <Link className="sr-only" href="#main-content">{t.skip}</Link>
+                <Link className="sr-only" href="#main-content">{t.a11ySkipToMain}</Link>
                 <ul className="list-disc columns-2 sm:columns-3 md:columns-4">
                     <li>
                         <a href="https://iconscout.com/icons/angularjs" className="underline underline-offset-2" target="_blank">Angularjs</a> by <a href="https://iconscout.com/contributors/icon-mafia" className="underline underline-offset-2">Icon Mafia</a> on <a href="https://iconscout.com" className="text-sm">IconScout</a>
