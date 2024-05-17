@@ -8,6 +8,7 @@ import {ContactMe as t} from  '@/utils/resourceContent';
 
 export type ContactFormState = EmailData & {
     resetKey:string
+    resetError:number  // To fix A11y , it allows to announce the error after the spinner finishes.
     errors?:{
         name?: string[] ;
         email?: string[] ;
@@ -45,6 +46,7 @@ export async function createContactMe(
             ...prevState,
             errors: validatedFields.error.flatten().fieldErrors,
             result:{message: t.resultMessage.validationError, type:ResultTypeEnum.ERROR},
+            resetError: prevState.resetError+1
         };
     }
 
