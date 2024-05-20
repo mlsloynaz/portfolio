@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from 'next/link';
-import {Projects as t} from  '@/utils/resourceContent';
+import { Projects as t } from '@/utils/resourceContent';
 
 type ProjectThumbnailProps = {
-    title:string;
-    shortDescription:string;
-    logo:string;
+    title: string;
+    shortDescription: string;
+    logo: string;
 }
 
 export default function ProjectThumbnail({ title, shortDescription, logo }: ProjectThumbnailProps) {
@@ -16,9 +16,8 @@ export default function ProjectThumbnail({ title, shortDescription, logo }: Proj
                 <p className="text-sm text-[#4d5157]">{shortDescription}</p>
             </div>
             <div className="flex justify-between">
-                <Link className="text-md text-grey-800 underline underline-offset-4 decoration-1" href={`project/${title}`}>
-                    {t.learnMore}
-                </Link>
+                <p> {t.learnMore}<Link className="text-md text-grey-800 underline underline-offset-4 decoration-1" href={`project/${title}`} />
+                </p>
                 <div className="relative h-8 w-8">
                     <Image
                         src={`/images/company/${logo}`}
