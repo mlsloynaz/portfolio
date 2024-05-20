@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'portfolio': "url('/images/home-bg.png')", // Remove 'bg-' prefix from the class name
+        'portfolio': "url('/images/home-bg.webp')", // Remove 'bg-' prefix from the class name
       },
     },
   },
