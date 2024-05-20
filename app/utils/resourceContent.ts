@@ -75,6 +75,7 @@ export const Projects={
     title:"Experience",
     description:"Successfully completed a variety of projects ranging from e-commerce platforms to data visualization tools. Strong problem-solving abilities, with a focus on delivering robust and scalable solutions. Adept at working in agile environments and collaborating with cross-functional teams to achieve project goals.",
     learnMore:"Learn more",
+    learnMoreA11y:"Learn more about"
 }
 
 export const ProjectDetail={
