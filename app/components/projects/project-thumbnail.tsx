@@ -17,8 +17,7 @@ export default function ProjectThumbnail({ title, shortDescription, logo }: Proj
             </div>
             <div className="flex justify-between">
                 <Link className="text-md text-grey-800 underline underline-offset-4 decoration-1"
-                    href={`project/${title}`} >{t.learnMore}
-                    aria-label={`${t.learnMoreA11y} ${title}`}
+                    href={`project/${title}`} >{t.learnMore}<span className="sr-only">{`${t.about} ${title}`}</span>
                 </Link>
                 <div className="relative h-8 w-8">
                     <Image
