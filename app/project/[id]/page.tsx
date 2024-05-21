@@ -26,7 +26,7 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
                         className='object-contain'
                         fill
                     /> : <Image
-                        src={`/images/project/default-image.png`}
+                        src={`/images/project/default-image.webp`}
                         alt={t.a11yDefaultPicAlt}
                         className='object-contain'
                         fill

@@ -16,8 +16,9 @@ export default function ProjectThumbnail({ title, shortDescription, logo }: Proj
                 <p className="text-sm text-[#4d5157]">{shortDescription}</p>
             </div>
             <div className="flex justify-between">
-                <p> {t.learnMore}<Link className="text-md text-grey-800 underline underline-offset-4 decoration-1" href={`project/${title}`} />
-                </p>
+                <Link className="text-md text-grey-800 underline underline-offset-4 decoration-1"
+                    href={`project/${title}`} >{t.learnMore}<span className="sr-only">{`${t.about} ${title}`}</span>
+                </Link>
                 <div className="relative h-8 w-8">
                     <Image
                         src={`/images/company/${logo}`}
