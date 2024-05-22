@@ -64,7 +64,7 @@ export const ContactMe= {
 
 export const Bio= {
     titleSection:"About",
-    hi: "Hi",
+    hi: "Hi,",
     title:"I am Maria Sierra-Loynaz",
     description:"Experienced Web developer with a strong focus on JavaScript, specializing in React, Typescript, NodeJs.",
     secondaryBio:{
