@@ -33,7 +33,7 @@ export default function Bio() {
                 </div>
                 <div className="flex flex-col  text-gray-500">
                     <p className="flex text-9xl font-extrabold">10+</p>
-                    <p className="text-3xl">years experience</p>
+                    <p className="text-3xl">{t.yearsExperience}</p>
                 </div>
 
             </div>

@@ -16,7 +16,9 @@ export  const Footer={
     gotoLinkedin:"go to Linkedin profile",
     title:"Credits",
     icons:"Icons",
-    a11ySkipToMain:"Skip to main content"
+    a11ySkipToMain:"Skip to main content",
+    a11SectionTitle:"Accessibility Statement",
+    a11ySectionDesc:'We are committed to ensuring our website is accessible to everyone. If you experience any issues, please contact us at'
 }
 
 export const ContactDetails= {
@@ -68,7 +70,8 @@ export const Bio= {
     secondaryBio:{
         title:"Flexible, passionate and quick learner",
         description:"More than 10 years working in Javascript. I am able to navigate seamlessly in the full stack. Known for innovative problem-solving and a keen interest in staying updated with the latest tech trends."
-    }
+    },
+    yearsExperience:"years experience"
 }
 
 export const Projects={
