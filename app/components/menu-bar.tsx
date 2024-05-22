@@ -30,7 +30,7 @@ export default function MenuBar() {
                     <Image
                         src="/images/logo.png"
                         alt={t.a11yGotoHome}
-                        width={30}
+                        width={25}
                         height={30}
                         className="inline pr-2"
                     />

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import profilePic from '/public/images/profile-pic.webp'
-import {Bio as t} from  '@/utils/resourceContent';
+import { Bio as t } from '@/utils/resourceContent';
 
 export default function Bio() {
     return (
@@ -26,9 +26,16 @@ export default function Bio() {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col h-full text-grey-700 max-w-[1024px] px-6 sm:px-12 pt-20">
-                <p className="text-5xl pb-8">{`${t.secondaryBio.title}`}</p>
-                <p className="text-lg">{`${t.secondaryBio.description}`}</p>
+            <div className="flex flex-col md:flex-row h-full text-grey-700 max-w-[1024px] px-6 sm:px-12 pt-20 justify-between">
+                <div className="flex flex-col h-full md:h-[200px] w-full md:w-[60%]">
+                    <p className="text-5xl pb-8">{`${t.secondaryBio.title}`}</p>
+                    <p className="text-lg">{`${t.secondaryBio.description}`}</p>
+                </div>
+                <div className="flex flex-col  text-gray-500">
+                    <p className="flex text-9xl font-extrabold">10+</p>
+                    <p className="text-3xl">years experience</p>
+                </div>
+
             </div>
         </section>
     )
