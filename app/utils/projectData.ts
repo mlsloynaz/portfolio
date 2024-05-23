@@ -43,7 +43,7 @@ export const projectData: Record<string, ProjectDataType>=
         shortDescription:"Shopify page",
         description: "Developed the redesign and A/B testing of the 'Plan and Prices' page on the Shopify platform to enhance user experience and drive conversions. Implemented data-driven design changes based on user feedback and analytics to optimize the page for increased engagement and sales.",
         logo: 'shopify-logo.webp',
-        image: 'sp-planprices.webp',
+        image: 'sp-planprices..webp',
         skills: ['Git','Github','HTML','CSS','Javascript','Typescript', 'React', 'GraphQl', 'NodeJs'],
         company:"Shopify",
         years:[2020,2021],

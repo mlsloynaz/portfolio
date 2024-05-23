@@ -16,6 +16,7 @@ export default function Bio() {
                     <div className="m-2 rounded-full overflow-hidden absolute top-32 right-0 w-36 md:w-64 md:relative md:top-0 md:right-0">
                         <Image
                             src={profilePic}
+                            priority
                             alt="Picture of the author"
                             width={300}
                             height={300}
