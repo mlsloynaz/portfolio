@@ -25,10 +25,10 @@ export default function MenuBar() {
 
     return (
         <>
-            <nav className="flex justify-between items-center h-20 px-8 md:px-28 py-4 bg-stone-50 bg-opacity-95">
+            <nav className="flex justify-between items-center h-20 px-8 md:px-28 py-4 bg-stone-50/80  backdrop-blur-md">
                 <Link href="/">
                     <Image
-                        src="/images/logo.png"
+                        src="/images/logo.webp"
                         alt={t.a11yGotoHome}
                         width={25}
                         height={30}

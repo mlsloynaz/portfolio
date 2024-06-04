@@ -15,10 +15,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-stone-50">
-        <div className="relative h-32">
-          <Header />
-        </div>
+      <body className="bg-stone-50 sm:overflow-x-hidden">
+        <Header />
         <div className="flex flex-col items-center">
           {children}
         </div>
