@@ -14,8 +14,8 @@ export default function Header() {
                     <Image
                         src="/images/phone-call.svg"
                         alt="call me by phone"
-                        width={30}
-                        height={30} />
+                        width={25}
+                        height={25} />
                     <p className="hidden md:block">( +1 ) 813-768-5545</p>
                 </a>
             </div>
