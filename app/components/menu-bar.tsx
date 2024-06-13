@@ -49,7 +49,7 @@ export default function MenuBar() {
             {
 
                 menuOpen ?
-                    <div className="fixed top-32 flex flex-col bg-slate-50 w-full bg-opacity-95" onClick={handleMenuMobileClick}>
+                    <div className="fixed top-32 flex flex-col bg-slate-50 w-full bg-opacity-95 md:hidden" onClick={handleMenuMobileClick}>
                         <MenuItems />
                     </div> : null
             }
