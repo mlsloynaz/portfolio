@@ -7,6 +7,7 @@ import MenuIcon from "./menu-icon";
 import { Header as t } from '@/utils/resourceContent';
 import { useMenuContext } from "./MenuContext/menuContext";
 import { useEffect, useState } from "react";
+import { MenuItems } from "./menu-items";
 
 export default function MenuBar() {
     const { menuOpen, setMenuOpen } = useMenuContext()
@@ -37,7 +38,7 @@ export default function MenuBar() {
                     <p className="inline">{t.home}</p>
                 </Link>
                 <div className="hidden gap-4 md:gap-8 md:flex">
-                    <MenuItems />
+                    <MenuItems itemClass="inline hover:bg-gray-200 md:rounded-xl"/>
                 </div>
                 <div className="flex justify-self-end items-center">
                     <Link className="button-blue" href="/contactme">{t.contactMeBtn}</Link>
@@ -47,31 +48,14 @@ export default function MenuBar() {
                 </div>
             </nav>
             {
-
                 menuOpen ?
                     <div className="fixed top-32 flex flex-col bg-slate-50 w-full bg-opacity-95 md:hidden" onClick={handleMenuMobileClick}>
-                        <MenuItems />
+                        <MenuItems itemClass="border-y border-gray-300 hover:bg-gray-200"/>
                     </div> : null
             }
             <div aria-live="polite" aria-atomic="true" className="sr-only">
                 {announcement}
             </div>
         </>
-    )
-}
-
-function MenuItems() {
-    return (
-        <ul role="menu" >
-            <li role="menuitem" className="border-y border-gray-300 p-4 md:border-none md:inline">
-                <Link href="/">{t.about}</Link>
-            </li>
-            <li role="menuitem" className="border-y border-gray-300 p-4 md:border-none md:inline">
-                <Link href="/#experience-section">{t.experience}</Link>
-            </li>
-            <li role="menuitem" className="border-y border-gray-300 p-4 md:border-none md:inline">
-                <Link href="/#contact-info-section">{t.contactInfo}</Link>
-            </li>
-        </ul>
     )
 }

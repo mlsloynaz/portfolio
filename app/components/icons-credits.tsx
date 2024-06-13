@@ -5,9 +5,9 @@ import { Footer as t } from '@/utils/resourceContent';
 
 export function IconCredits() {
     return (
-        <section aria-labelledby="icons-credit">
+        <section aria-labelledby="icons-credit" className="p-4 w-full">
             <details className="w-full bg-black text-stone-50 text-sm">
-                <summary className="cursor pointer text-xl"> <h3 className="inline-block pb-2" id="icons-credit">{t.icons}</h3></summary>
+                <summary className="cursor pointer text-xl"> <h3 className="inline-block pb-2 text-lg" id="icons-credit">{t.icons}</h3></summary>
                 <ul className="list-disc columns-2 sm:columns-3 md:columns-4 space-y-2">
                     <li>
                         <a href="https://iconscout.com/icons/angularjs" className="underline underline-offset-2" target="_blank">Angularjs</a> by <a href="https://iconscout.com/contributors/icon-mafia" className="underline underline-offset-2">Icon Mafia</a> on <a href="https://iconscout.com" className="text-sm">IconScout</a>
