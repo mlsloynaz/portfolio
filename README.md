@@ -8,11 +8,11 @@
 
 This is a repo that contains the source code for the portfolio website
 
-The Portfolio have the following sections : **About**, **Experience**, **Testimonial** , **ContactMe**
+The Portfolio have the following sections : **About**, **Experience**, **ContactDetails** , **ContactMe**
 
 ### About
 
-Personal details and Contact info, bio
+Personal details , bio
 
 ### Experience
 
@@ -20,11 +20,13 @@ Personal details and Contact info, bio
     - Skills : Summary of the skills and links to Github projects 
     - Resume: to be downloaded
 
-### Testimonial
+### Copntact details
 
-Testimonials or recommendations from previous clients or employers
+Contact info,
 
 ### Contact Form
+
+Form that send an email with the  requested info.
 
 ## Project Setup
 
@@ -49,6 +51,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
 
 ### Learn More
 

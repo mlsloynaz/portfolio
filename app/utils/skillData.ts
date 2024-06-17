@@ -75,7 +75,7 @@ export const  skillData:Record<string, skillDataType>={
     },
     ["Sharepoint"]:{
         name:"Sharepoint",
-        logoUrl:"sencha.svg"
+        logoUrl:"microsoft-sharepoint.svg"
     },
 
 

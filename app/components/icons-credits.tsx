@@ -72,6 +72,9 @@ export function IconCredits() {
                     <li>
                         <a href="https://iconscout.com/icons/linkedin" className="underline underline-offset-2 font-size-sm" target="_blank">Linkedin</a> by <a href="https://iconscout.com/contributors/icon-mafia" className="underline underline-offset-2 font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" className="underline underline-offset-2 font-size-sm">IconScout</a>
                     </li>
+                    <li>
+                        <a href="https://iconscout.com/icons/microsoft-sharepoint" className="underline underline-offset-2 font-size-sm" target="_blank">microsoft sharepoint</a> by <a href="https://iconscout.com/contributors/maninderkaur" className="underline underline-offset-2 font-size-sm" target="_blank">maninderkaur</a>
+                    </li>
                 </ul>
             </details>
         </section>
