@@ -26,7 +26,7 @@ export default function MenuBar() {
 
     return (
         <>
-            <nav className="flex justify-between items-center h-20 px-8 md:px-28 py-4 bg-stone-50/80  backdrop-blur-md">
+            <nav className="flex justify-between items-center h-20 px-8 md:px-28 py-4 bg-stone-50/80  backdrop-filter backdrop-blur-md">
                 <Link href="/">
                     <Image
                         src="/images/logo.webp"

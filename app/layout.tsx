@@ -4,7 +4,7 @@ import Header from "./components/header";
 import { Footer } from "./components/footer";
 
 export const metadata: Metadata = {
-  title: "MariaSierra Web developer",
+  title: "Maria Sierra Web developer portfolio",
   description: "Maria Sierra web developer portfolio",
 };
 
