@@ -38,7 +38,7 @@ export default function MenuBar() {
                     <p className="inline">{t.home}</p>
                 </Link>
                 <div className="hidden gap-4 md:gap-8 md:flex">
-                    <MenuItems itemClass="inline hover:bg-gray-200 md:rounded-xl"/>
+                    <MenuItems itemClass="hover:bg-gray-200 md:rounded-xl p-4" listItemClass="inline m-2"/>
                 </div>
                 <div className="flex justify-self-end items-center">
                     <Link className="button-blue" href="/contactme">{t.contactMeBtn}</Link>
@@ -50,7 +50,7 @@ export default function MenuBar() {
             {
                 menuOpen ?
                     <div className="fixed top-32 flex flex-col bg-slate-50 w-full bg-opacity-95 md:hidden" onClick={handleMenuMobileClick}>
-                        <MenuItems itemClass="border-y border-gray-300 hover:bg-gray-200"/>
+                        <MenuItems itemClass="border-y border-gray-300 hover:bg-gray-200 w-full block"/>
                     </div> : null
             }
             <div aria-live="polite" aria-atomic="true" className="sr-only">

@@ -39,8 +39,8 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
                         <Image
                             src={`/images/company/${logo}`}
                             alt=""
-                            width={30}
-                            height={30}
+                            width={90}
+                            height={90}
                         />
                     </span>
                     <span>{company}</span>
