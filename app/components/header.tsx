@@ -8,7 +8,7 @@ export default function Header() {
     return (
         <header className="fixed z-20 left-0 top-0 flex flex-col w-full justify-center items-center border-b border-gray-300">
             <div className="flex flex-col items-center bg-black w-full text-stone-50">
-                <div className="flex justify-between  h-12 w-full page-width py-4 text-stone-50">
+                <div className="flex justify-between  h-12 page-width py-4 text-stone-50">
                     <Link className="sr-only" href="#main-content">{t.a11ySkipToMain}</Link>
                     <h1>Maria Sierra-Loynaz Portfolio </h1>
                     <a className="flex items-center" href="tel:+18137685545">
@@ -22,7 +22,9 @@ export default function Header() {
                 </div>
             </div>
             <MenuProvider>
+            <div className="flex flex-col items-center w-full h-20 bg-stone-50/80  backdrop-filter backdrop-blur-md">
                 <MenuBar />
+            </div>    
             </MenuProvider>
         </header>
     )

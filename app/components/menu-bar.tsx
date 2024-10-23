@@ -26,7 +26,7 @@ export default function MenuBar() {
 
     return (
         <>
-            <nav className="flex justify-between items-center h-20 w-full page-width py-4 bg-stone-50/80  backdrop-filter backdrop-blur-md">
+            <nav className="flex justify-between items-center page-width py-4">
                 <Link href="/">
                     <Image
                         src="/images/logo.webp"
@@ -49,7 +49,7 @@ export default function MenuBar() {
             </nav>
             {
                 menuOpen ?
-                    <div className="fixed top-32 flex flex-col bg-slate-50 w-full bg-opacity-95 md:hidden" onClick={handleMenuMobileClick}>
+                    <div className="fixed top-20 flex flex-col bg-slate-50 w-full  md:hidden" onClick={handleMenuMobileClick}>
                         <MenuItems itemClass="border-y border-gray-300 hover:bg-gray-200 w-full block"/>
                     </div> : null
             }

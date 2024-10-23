@@ -2,8 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+ 
+}
+
 @layer utilities{
     .page-width{
-        @apply max-w-[1024px] px-6  sm:px-12;
+        @apply w-full max-w-[1024px] px-6  sm:px-12;
+    }
+
+    .no-content-page{
+        @apply flex flex-col justify-center items-center my-10;
+    }
+
+    .content-page{
+        @apply flex flex-col page-width p-4 py-20 mt-32 overflow-x-hidden ;
+    }
+    .section-spacing{
+        @apply flex flex-col h-full text-grey-700 page-width pt-20
     }
 }
