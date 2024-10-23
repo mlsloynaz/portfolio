@@ -6,7 +6,7 @@ export default function ContactDetails() {
     return (
         <>
             <div id="contact-info-section" className="pt-20 mt-[-80px]"></div>
-            <section aria-labelledby="title-contact-info" className="bg-[#191d3c] mt-24 flex flex-col h-full w-full bg-portfolio bg-cover bg-bottom text-stone-100 lg:rounded-lg page-width pb-6 ">
+            <section aria-labelledby="title-contact-info" className="bg-[#191d3c] mt-24 flex flex-col h-full w-full bg-portfolio bg-cover bg-bottom text-stone-100 lg:rounded-lg page-width pb-6 pt-6">
                 <h2 id="title-contact-info" className="text-5xl pb-8">{t.title}</h2>
                 <div className="flex flex-col sm:flex-row gap-4 w-full justify-between  pb-4 sm:pb-8">
                     <dl>
@@ -28,7 +28,7 @@ export default function ContactDetails() {
                             <p>{t.addressValue}</p>
                         </dd>
                     </dl>
-                    <div className="pt-4 sm:pt-0">
+                    <div className="flex h-fit pt-4 sm:pt-0">
                         <Link className="button-white" href="/contactme">{t.linkLbl}</Link>
                     </div>
                 </div>
