@@ -49,7 +49,7 @@ export default function MenuBar() {
             </nav>
             {
                 menuOpen ?
-                    <div className="mobile-only fixed top-20 flex flex-col bg-slate-50 w-full " onClick={handleMenuMobileClick}>
+                    <div className="mobile-only fixed top-20 flex flex-col bg-slate-50 w-full shadow-lg" onClick={handleMenuMobileClick}>
                         <MenuItems itemClass="border-y border-gray-300 hover:bg-gray-200 w-full block"/>
                     </div> : null
             }
