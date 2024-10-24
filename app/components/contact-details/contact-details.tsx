@@ -18,25 +18,6 @@ export default function ContactDetails() {
                             mlsloynaz@gmail.com
                         </a>
                     </dd>
-                    <dt className="pb-1 pt-4 text-xl">{t.social}</dt>
-                    <dd className="flex gap-4">
-                        <Link href="https://github.com/mlsloynaz">
-                            <Image
-                                src="images/skills/github-white.svg"
-                                alt={t.a11yGoToGitHub}
-                                width={30}
-                                height={30}
-                            />
-                        </Link>
-                        <Link href="https://www.linkedin.com/in/maria-lourdes-sierra-loynaz-b907b58b">
-                            <Image
-                                src="images/skills/linkedin-white.svg"
-                                width={30}
-                                height={30}
-                                alt={t.a11yGoToLinkedin}
-                            />
-                        </Link>
-                    </dd>
                 </dl>
                 <dl>
                     <dt className="text-xl">{t.phone}</dt>
@@ -56,6 +37,27 @@ export default function ContactDetails() {
                     </Link>
                 </div>
             </div>
+            <dl>
+                <dt className="pb-1 pt-4 text-xl">{t.social}</dt>
+                <dd className="flex gap-4">
+                    <Link href="https://github.com/mlsloynaz">
+                        <Image
+                            src="images/skills/github-white.svg"
+                            alt={t.a11yGoToGitHub}
+                            width={30}
+                            height={30}
+                        />
+                    </Link>
+                    <Link href="https://www.linkedin.com/in/maria-lourdes-sierra-loynaz-b907b58b">
+                        <Image
+                            src="images/skills/linkedin-white.svg"
+                            width={30}
+                            height={30}
+                            alt={t.a11yGoToLinkedin}
+                        />
+                    </Link>
+                </dd>
+            </dl>
         </section>
     );
 }
