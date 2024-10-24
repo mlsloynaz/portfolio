@@ -1,0 +1,5 @@
+{
+    "tailwindConfig": "./tailwind.config.js",
+    "tailwindPreserveWhitespace": true,
+    "plugins": ["prettier-plugin-tailwindcss"]
+}
