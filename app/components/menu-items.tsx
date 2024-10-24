@@ -1,25 +1,39 @@
 import Link from 'next/link'
 import { Header as t } from '@/utils/resourceContent';
 
+const sections = [
+    {
+        name: t.about,
+        url: "/"
+    },
+    {
+        name: t.experience,
+        url: "#experience-section"
+    },
+    {
+        name: t.contactInfo,
+        url: "#contact-info-section"
+    }
+
+]
+
 type MenuItemsPro = {
     itemClass: string;
-    listItemClass?:string;
+    listItemClass?: string;
     listClass?: string;
 }
 
-export function MenuItems({ itemClass = "", listClass = "" , listItemClass=""}: MenuItemsPro) {
-    const itemCommon="p-4"
+export function MenuItems({ itemClass = "", listClass = "", listItemClass = "" }: MenuItemsPro) {
+    const itemCommon = "p-4"
     return (
         <ul role="menu" className={listClass}>
-            <li role="menuitem" className={listItemClass}>
-                <Link className={`${itemCommon} ${itemClass}`} href="/">{t.about}</Link>
-            </li>
-            <li role="menuitem" className={listItemClass}>
-                <Link className={`${itemCommon} ${itemClass}`} href="/#experience-section">{t.experience}</Link>
-            </li>
-            <li role="menuitem" className={listItemClass}>
-                <Link className={`${itemCommon} ${itemClass}`} href="/#contact-info-section">{t.contactInfo}</Link>
-            </li>
+            {
+                sections.map(({ name, url }) => (
+                    <li key={url} role="menuitem" className={listItemClass}>
+                        <Link className={`${itemCommon} ${itemClass}`} href={url}>{name}</Link>
+                    </li>
+                ))
+            }
         </ul>
     )
 }

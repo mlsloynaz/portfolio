@@ -22,7 +22,7 @@ export default function Header() {
                 </div>
             </div>
             <MenuProvider>
-            <div className="flex flex-col justify-center items-center w-full h-20 bg-stone-50/80  backdrop-filter backdrop-blur-md">
+            <div className="flex flex-col justify-center items-center w-full h-20 bg-stone-50/80  backdrop-filter backdrop-blur-md shadow-lg">
                 <MenuBar />
             </div>
             </MenuProvider>

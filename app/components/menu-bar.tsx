@@ -38,7 +38,7 @@ export default function MenuBar() {
                     <p className="inline">{t.home}</p>
                 </Link>
                 <div className="desktop-only gap-4 md:gap-8 md:flex">
-                    <MenuItems itemClass="nav-link" listItemClass="inline m-2"/>
+                    <MenuItems itemClass="nav-link" listItemClass="inline space-x-2"/>
                 </div>
                 <div className="flex justify-self-end items-center">
                     <Link className="button-blue" href="/contactme">{t.contactMeBtn}</Link>
