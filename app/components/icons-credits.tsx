@@ -7,29 +7,28 @@ export function IconCredits() {
     return (
         <section aria-labelledby="icons-credit" className="w-full p-4">
             <details className="w-full bg-black text-sm text-stone-50">
-                <summary className="cursor pointer text-xl transition-opacity hover:opacity-85">
-                    {' '}
+                <summary className="cursor pointer text-xl space-x-1 transition-opacity hover:opacity-85">
                     <h3 className="inline-block" id="icons-credit">
                         {t.icons}
                     </h3>
                 </summary>
-                <ul className="list-disc columns-2 space-y-2 sm:columns-3 md:columns-4">
-                    <li>
+                <ul className="list-disc columns-2 space-y-2 sm:columns-3 md:columns-4 ">
+                    <li >
                         <a
                             href="https://iconscout.com/icons/angularjs"
                             className="underline underline-offset-2"
                             target="_blank"
                         >
                             Angularjs
-                        </a>{' '}
-                        by{' '}
+                        </a>
+                        <span>by</span>
                         <a
                             href="https://iconscout.com/contributors/icon-mafia"
                             className="underline underline-offset-2"
                         >
                             Icon Mafia
-                        </a>{' '}
-                        on{' '}
+                        </a>
+                        <span>on</span>
                         <a href="https://iconscout.com" className="text-sm">
                             IconScout
                         </a>
@@ -41,15 +40,15 @@ export function IconCredits() {
                             target="_blank"
                         >
                             Git
-                        </a>{' '}
-                        by{' '}
+                        </a>
+                        <span>by</span>
                         <a
                             href="https://iconscout.com/contributors/icon-mafia"
                             className="underline underline-offset-2"
                         >
                             Icon Mafia
-                        </a>{' '}
-                        on{' '}
+                        </a>
+                        <span>on</span>
                         <a
                             href="https://iconscout.com"
                             className="underline underline-offset-2"
@@ -64,8 +63,8 @@ export function IconCredits() {
                             target="_blank"
                         >
                             Github
-                        </a>{' '}
-                        on{' '}
+                        </a>
+                        <span>on</span>
                         <a
                             href="https://iconscout.com"
                             className="underline underline-offset-2"
@@ -80,8 +79,8 @@ export function IconCredits() {
                             target="_blank"
                         >
                             Nodejs
-                        </a>{' '}
-                        by{' '}
+                        </a>
+                        <span>by</span>
                         <a
                             href="https://iconscout.com/contributors/icon-mafia"
                             className="underline underline-offset-2"
@@ -97,15 +96,15 @@ export function IconCredits() {
                             target="_blank"
                         >
                             javascript
-                        </a>{' '}
-                        by{' '}
+                        </a>
+                        <span>by</span>
                         <a
                             href="https://iconscout.com/contributors/maninderkaur"
                             className="underline underline-offset-2"
                         >
                             maninderkaur
-                        </a>{' '}
-                        on{' '}
+                        </a>
+                        <span>on</span>
                         <a
                             href="https://iconscout.com"
                             className="underline underline-offset-2"
@@ -120,15 +119,15 @@ export function IconCredits() {
                             target="_blank"
                         >
                             Typescript
-                        </a>{' '}
-                        by{' '}
+                        </a>
+                        <span>by</span>
                         <a
                             href="https://iconscout.com/contributors/icon-mafia"
                             className="underline underline-offset-2"
                         >
                             Icon Mafia
-                        </a>{' '}
-                        on{' '}
+                        </a>
+                        <span>on</span>
                         <a
                             href="https://iconscout.com"
                             className="underline underline-offset-2"
@@ -143,15 +142,15 @@ export function IconCredits() {
                             target="_blank"
                         >
                             Html
-                        </a>{' '}
-                        by{' '}
+                        </a>
+                        <span>by</span>
                         <a
                             href="https://iconscout.com/contributors/icon-mafia"
                             className="underline underline-offset-2"
                         >
                             Icon Mafia
-                        </a>{' '}
-                        on{' '}
+                        </a>
+                        <span>on</span>
                         <a
                             href="https://iconscout.com"
                             className="underline underline-offset-2"
@@ -166,15 +165,15 @@ export function IconCredits() {
                             target="_blank"
                         >
                             Css
-                        </a>{' '}
-                        by{' '}
+                        </a>
+                        <span>by</span>
                         <a
                             href="https://iconscout.com/contributors/icon-mafia"
                             className="underline underline-offset-2"
                         >
                             Icon Mafia
-                        </a>{' '}
-                        on{' '}
+                        </a>
+                        <span>on</span>
                         <a
                             href="https://iconscout.com"
                             className="underline underline-offset-2"
@@ -189,8 +188,8 @@ export function IconCredits() {
                             target="_blank"
                         >
                             React
-                        </a>{' '}
-                        by{' '}
+                        </a>
+                        <span>by</span>
                         <a
                             href="https://iconscout.com/contributors/icon-mafia"
                             className="underline underline-offset-2"
@@ -206,15 +205,15 @@ export function IconCredits() {
                             target="_blank"
                         >
                             Express
-                        </a>{' '}
-                        by{' '}
+                        </a>
+                        <span>by</span>
                         <a
                             href="https://iconscout.com/contributors/icon-mafia"
                             className="underline underline-offset-2"
                         >
                             Icon Mafia
-                        </a>{' '}
-                        on{' '}
+                        </a>
+                        <span>on</span>
                         <a
                             href="https://iconscout.com"
                             className="underline underline-offset-2"
@@ -229,15 +228,15 @@ export function IconCredits() {
                             target="_blank"
                         >
                             Chevron Right
-                        </a>{' '}
-                        by{' '}
+                        </a>
+                        <span>by</span>
                         <a
                             href="https://iconscout.com/contributors/fatkhulkarim"
                             className="underline underline-offset-2"
                         >
                             Fatkhul Karim
-                        </a>{' '}
-                        on{' '}
+                        </a>
+                        <span>on</span>
                         <a
                             href="https://iconscout.com"
                             className="underline underline-offset-2"
@@ -252,15 +251,15 @@ export function IconCredits() {
                             target="_blank"
                         >
                             Phone
-                        </a>{' '}
-                        by{' '}
+                        </a>
+                        <span>by</span>
                         <a
                             href="https://iconscout.com/contributors/eva-icons"
                             className="underline underline-offset-2"
                         >
                             Akveo
-                        </a>{' '}
-                        on{' '}
+                        </a>
+                        <span>on</span>
                         <a
                             href="https://iconscout.com"
                             className="underline underline-offset-2"
@@ -275,8 +274,8 @@ export function IconCredits() {
                             target="_blank"
                         >
                             Ionic
-                        </a>{' '}
-                        by{' '}
+                        </a>
+                        <span>by</span>
                         <a
                             href="https://iconscout.com/contributors/icon-54"
                             className="font-size-sm underline underline-offset-2"
@@ -292,8 +291,8 @@ export function IconCredits() {
                             target="_blank"
                         >
                             Redux
-                        </a>{' '}
-                        by{' '}
+                        </a>
+                        <span>by</span>
                         <a
                             href="https://iconscout.com/contributors/icon-54"
                             className="font-size-sm underline underline-offset-2"
@@ -309,15 +308,15 @@ export function IconCredits() {
                             target="_blank"
                         >
                             Graphql
-                        </a>{' '}
-                        by{' '}
+                        </a>
+                        <span>by</span>
                         <a
                             href="https://iconscout.com/contributors/icon-54"
                             className="font-size-sm underline underline-offset-2"
                         >
                             Icon 54
-                        </a>{' '}
-                        on{' '}
+                        </a>
+                        <span>on</span>
                         <a
                             href="https://iconscout.com"
                             className="font-size-sm underline underline-offset-2"
@@ -332,15 +331,15 @@ export function IconCredits() {
                             target="_blank"
                         >
                             Net
-                        </a>{' '}
-                        by{' '}
+                        </a>
+                        <span>by</span>
                         <a
                             href="https://iconscout.com/contributors/icon-mafia"
                             className="font-size-sm underline underline-offset-2"
                         >
                             Icon Mafia
-                        </a>{' '}
-                        on{' '}
+                        </a>
+                        <span>on</span>
                         <a
                             href="https://iconscout.com"
                             className="font-size-sm underline underline-offset-2"
@@ -355,15 +354,15 @@ export function IconCredits() {
                             target="_blank"
                         >
                             Jquery
-                        </a>{' '}
-                        by{' '}
+                        </a>
+                        <span>by</span>
                         <a
                             href="https://iconscout.com/contributors/icon-mafia"
                             className="font-size-sm underline underline-offset-2"
                         >
                             Icon Mafia
-                        </a>{' '}
-                        on{' '}
+                        </a>
+                        <span>on</span>
                         <a
                             href="https://iconscout.com"
                             className="font-size-sm underline underline-offset-2"
@@ -378,8 +377,8 @@ export function IconCredits() {
                             target="_blank"
                         >
                             Foundation
-                        </a>{' '}
-                        by{' '}
+                        </a>
+                        <span>by</span>
                         <a
                             href="https://iconscout.com/contributors/icon-mafia"
                             className="font-size-sm underline underline-offset-2"
@@ -395,15 +394,15 @@ export function IconCredits() {
                             target="_blank"
                         >
                             Bootsrap
-                        </a>{' '}
-                        by{' '}
+                        </a>
+                        <span>by</span>
                         <a
                             href="https://iconscout.com/contributors/pocike"
                             className="font-size-sm underline underline-offset-2"
                         >
                             Those Icons
-                        </a>{' '}
-                        on{' '}
+                        </a>
+                        <span>on</span>
                         <a
                             href="https://iconscout.com"
                             className="font-size-sm underline underline-offset-2"
@@ -418,8 +417,8 @@ export function IconCredits() {
                             target="_blank"
                         >
                             Sencha
-                        </a>{' '}
-                        by{' '}
+                        </a>
+                        <span>by</span>
                         <a
                             href="https://iconscout.com/contributors/icon-mafia"
                             className="font-size-sm underline underline-offset-2"
@@ -435,15 +434,15 @@ export function IconCredits() {
                             target="_blank"
                         >
                             Linkedin
-                        </a>{' '}
-                        by{' '}
+                        </a>
+                        <span>by</span>
                         <a
                             href="https://iconscout.com/contributors/icon-mafia"
                             className="font-size-sm underline underline-offset-2"
                         >
                             Icon Mafia
-                        </a>{' '}
-                        on{' '}
+                        </a>
+                        <span>on</span>
                         <a
                             href="https://iconscout.com"
                             className="font-size-sm underline underline-offset-2"
@@ -458,8 +457,8 @@ export function IconCredits() {
                             target="_blank"
                         >
                             microsoft sharepoint
-                        </a>{' '}
-                        by{' '}
+                        </a>
+                        <span>by</span>
                         <a
                             href="https://iconscout.com/contributors/maninderkaur"
                             className="font-size-sm underline underline-offset-2"

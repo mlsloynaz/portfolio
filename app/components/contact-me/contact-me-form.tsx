@@ -33,8 +33,7 @@ export function ContactMeForm() {
         resetError,
     } = actionResult;
 
-    const inputClass =
-        'p-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-blue-800 focus:ring-2  block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white';
+   
     const errorClass = 'border border-red-700 bg-red-50';
 
     return (
@@ -52,7 +51,7 @@ export function ContactMeForm() {
                         id="name"
                         name="name"
                         defaultValue={name}
-                        className={`${inputClass} ${errors?.name ? errorClass : ''}`}
+                        className={`${errors?.name ? errorClass : ''}`}
                         placeholder={t.namePlaceholder}
                         aria-describedby={
                             errors?.name ? 'name-error' : undefined
@@ -81,7 +80,7 @@ export function ContactMeForm() {
                         name="email"
                         id="email"
                         defaultValue={email}
-                        className={`${inputClass} ${errors?.email ? errorClass : ''}`}
+                        className={`${errors?.email ? errorClass : ''}`}
                         placeholder={t.emailPlaceholder}
                         aria-describedby={
                             errors?.email ? 'email-error' : undefined
@@ -110,7 +109,7 @@ export function ContactMeForm() {
                         name="subject"
                         id="subject"
                         defaultValue={subject}
-                        className={`${inputClass} ${errors?.subject ? errorClass : ''}`}
+                        className={`${errors?.subject ? errorClass : ''}`}
                         aria-describedby={
                             errors?.subject ? 'subject-error' : undefined
                         }
@@ -139,7 +138,7 @@ export function ContactMeForm() {
                         defaultValue={message}
                         rows={2}
                         cols={50}
-                        className={`${inputClass}  ${errors?.message ? errorClass : ''}`}
+                        className={` ${errors?.message ? errorClass : ''}`}
                         aria-describedby={
                             errors?.message ? 'message-error' : undefined
                         }

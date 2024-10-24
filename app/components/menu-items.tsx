@@ -27,12 +27,11 @@ export function MenuItems({
     listClass = '',
     listItemClass = '',
 }: MenuItemsPro) {
-    const itemCommon = 'p-4';
     return (
         <ul role="menu" className={listClass}>
             {sections.map(({ name, url }) => (
                 <li key={url} role="menuitem" className={listItemClass}>
-                    <Link className={`${itemCommon} ${itemClass}`} href={url}>
+                    <Link className={itemClass} href={url}>
                         {name}
                     </Link>
                 </li>

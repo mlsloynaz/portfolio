@@ -57,7 +57,7 @@ export default function MenuBar() {
                     className="mobile-only fixed top-20 flex w-full flex-col bg-slate-50 shadow-lg"
                     onClick={handleMenuMobileClick}
                 >
-                    <MenuItems itemClass="border-y border-gray-300 hover:bg-gray-200 w-full block" />
+                    <MenuItems itemClass="border-y border-gray-300 hover:bg-gray-200 active:border-blue-700 w-full block" />
                 </div>
             ) : null}
             <div aria-live="polite" aria-atomic="true" className="sr-only">

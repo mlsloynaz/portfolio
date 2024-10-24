@@ -45,8 +45,8 @@ export const ContactMe = {
     loading: 'Submit in progress...',
     errors: {
         emailInvalid: 'Invalid email format',
-        emailRequired: 'Provide an email address is required',
-        messageRequired: 'The message is required',
+        emailRequired: 'The Email address is required',
+        messageRequired: 'A message is required',
     },
     emailContent: {
         toUserSubject: 'Thank you for contacting me!',
