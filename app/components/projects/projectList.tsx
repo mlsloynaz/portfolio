@@ -49,8 +49,7 @@ export default function ProjectList() {
 
 
     return (
-        <div className="flex flex-col relative items-center justify-center">
-
+        <div className="flex-center flex-col relative">
             <div className="py-8 px-4 overflow-hidden w-[248px] sm:w-[488px] md:w-[728px] snap-mandatory">
                 <div ref={containerRef} className="flex gap-8 overflow-x-auto snap-x-mandatory">
                     {

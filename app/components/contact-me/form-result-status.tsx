@@ -58,10 +58,10 @@ function FormResultStatus({ type, message }: ResultStatusProps) {
 
 
     const { icon, colorClass, hasCloseButton } = resultStyle();
-    const visibilityClass = closed ? "hidden" : "flex"
+    const visibilityClass = closed ? "hidden" : "flex-center"
 
     return (
-        <div className={`my-4 p-2 ${visibilityClass} space-x-1 rounded-lg items-center justify-between ${colorClass}`}
+        <div className={`my-4 p-2 ${visibilityClass} space-x-1 rounded-lg ${colorClass}`}
             aria-live="polite"
             aria-atomic="true"
         >

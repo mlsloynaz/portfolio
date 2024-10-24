@@ -10,10 +10,10 @@ type ProjectThumbnailProps = {
 
 export default function ProjectThumbnail({ title, shortDescription, logo }: ProjectThumbnailProps) {
     return (
-        <div className="flex flex-col shrink-0 grow-0 h-48 w-52 bg-[#F6F1E7] p-4 justify-between rounded-lg">
+        <div className="project-card">
             <div className="flex flex-col">
-                <p className="text-xl pb-4 text-gray-800 decoration-4">{title}</p>
-                <p className="text-sm text-[#4d5157]">{shortDescription}</p>
+                <p className="project-card-title">{title}</p>
+                <p className="project-card-subtitle">{shortDescription}</p>
             </div>
             <div className="flex justify-between">
                 <Link className="text-md text-grey-800 underline underline-offset-4 decoration-1"
