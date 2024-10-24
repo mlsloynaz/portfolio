@@ -5,470 +5,468 @@ import { Footer as t } from '@/utils/resourceContent';
 
 export function IconCredits() {
     return (
-        <section aria-labelledby="icons-credit" className="w-full p-4">
-            <details className="w-full bg-black text-sm text-stone-50">
-                <summary className="cursor pointer text-xl space-x-1 transition-opacity hover:opacity-85">
-                    <h3 className="inline-block" id="icons-credit">
-                        {t.icons}
-                    </h3>
-                </summary>
-                <ul className="list-disc columns-2 space-y-2 sm:columns-3 md:columns-4 ">
-                    <li >
-                        <a
-                            href="https://iconscout.com/icons/angularjs"
-                            className="underline underline-offset-2"
-                            target="_blank"
-                        >
-                            Angularjs
-                        </a>
-                        <span>by</span>
-                        <a
-                            href="https://iconscout.com/contributors/icon-mafia"
-                            className="underline underline-offset-2"
-                        >
-                            Icon Mafia
-                        </a>
-                        <span>on</span>
-                        <a href="https://iconscout.com" className="text-sm">
-                            IconScout
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://iconscout.com/icons/git"
-                            className="underline underline-offset-2"
-                            target="_blank"
-                        >
-                            Git
-                        </a>
-                        <span>by</span>
-                        <a
-                            href="https://iconscout.com/contributors/icon-mafia"
-                            className="underline underline-offset-2"
-                        >
-                            Icon Mafia
-                        </a>
-                        <span>on</span>
-                        <a
-                            href="https://iconscout.com"
-                            className="underline underline-offset-2"
-                        >
-                            IconScout
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://iconscout.com/icons/github"
-                            className="underline underline-offset-2"
-                            target="_blank"
-                        >
-                            Github
-                        </a>
-                        <span>on</span>
-                        <a
-                            href="https://iconscout.com"
-                            className="underline underline-offset-2"
-                        >
-                            IconScout
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://iconscout.com/icons/nodejs"
-                            className="underline underline-offset-2"
-                            target="_blank"
-                        >
-                            Nodejs
-                        </a>
-                        <span>by</span>
-                        <a
-                            href="https://iconscout.com/contributors/icon-mafia"
-                            className="underline underline-offset-2"
-                            target="_blank"
-                        >
-                            Icon Mafia
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://iconscout.com/icons/javascript"
-                            className="underline underline-offset-2"
-                            target="_blank"
-                        >
-                            javascript
-                        </a>
-                        <span>by</span>
-                        <a
-                            href="https://iconscout.com/contributors/maninderkaur"
-                            className="underline underline-offset-2"
-                        >
-                            maninderkaur
-                        </a>
-                        <span>on</span>
-                        <a
-                            href="https://iconscout.com"
-                            className="underline underline-offset-2"
-                        >
-                            IconScout
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://iconscout.com/icons/typescript"
-                            className="underline underline-offset-2"
-                            target="_blank"
-                        >
-                            Typescript
-                        </a>
-                        <span>by</span>
-                        <a
-                            href="https://iconscout.com/contributors/icon-mafia"
-                            className="underline underline-offset-2"
-                        >
-                            Icon Mafia
-                        </a>
-                        <span>on</span>
-                        <a
-                            href="https://iconscout.com"
-                            className="underline underline-offset-2"
-                        >
-                            IconScout
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://iconscout.com/icons/html"
-                            className="underline underline-offset-2"
-                            target="_blank"
-                        >
-                            Html
-                        </a>
-                        <span>by</span>
-                        <a
-                            href="https://iconscout.com/contributors/icon-mafia"
-                            className="underline underline-offset-2"
-                        >
-                            Icon Mafia
-                        </a>
-                        <span>on</span>
-                        <a
-                            href="https://iconscout.com"
-                            className="underline underline-offset-2"
-                        >
-                            IconScout
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://iconscout.com/icons/css"
-                            className="underline underline-offset-2"
-                            target="_blank"
-                        >
-                            Css
-                        </a>
-                        <span>by</span>
-                        <a
-                            href="https://iconscout.com/contributors/icon-mafia"
-                            className="underline underline-offset-2"
-                        >
-                            Icon Mafia
-                        </a>
-                        <span>on</span>
-                        <a
-                            href="https://iconscout.com"
-                            className="underline underline-offset-2"
-                        >
-                            IconScout
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://iconscout.com/icons/react"
-                            className="underline underline-offset-2"
-                            target="_blank"
-                        >
-                            React
-                        </a>
-                        <span>by</span>
-                        <a
-                            href="https://iconscout.com/contributors/icon-mafia"
-                            className="underline underline-offset-2"
-                            target="_blank"
-                        >
-                            Icon Mafia
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://iconscout.com/icons/express"
-                            className="underline underline-offset-2"
-                            target="_blank"
-                        >
-                            Express
-                        </a>
-                        <span>by</span>
-                        <a
-                            href="https://iconscout.com/contributors/icon-mafia"
-                            className="underline underline-offset-2"
-                        >
-                            Icon Mafia
-                        </a>
-                        <span>on</span>
-                        <a
-                            href="https://iconscout.com"
-                            className="underline underline-offset-2"
-                        >
-                            IconScout
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://iconscout.com/icons/chevron-right"
-                            className="underline underline-offset-2"
-                            target="_blank"
-                        >
-                            Chevron Right
-                        </a>
-                        <span>by</span>
-                        <a
-                            href="https://iconscout.com/contributors/fatkhulkarim"
-                            className="underline underline-offset-2"
-                        >
-                            Fatkhul Karim
-                        </a>
-                        <span>on</span>
-                        <a
-                            href="https://iconscout.com"
-                            className="underline underline-offset-2"
-                        >
-                            IconScout
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://iconscout.com/icons/phone"
-                            className="underline underline-offset-2"
-                            target="_blank"
-                        >
-                            Phone
-                        </a>
-                        <span>by</span>
-                        <a
-                            href="https://iconscout.com/contributors/eva-icons"
-                            className="underline underline-offset-2"
-                        >
-                            Akveo
-                        </a>
-                        <span>on</span>
-                        <a
-                            href="https://iconscout.com"
-                            className="underline underline-offset-2"
-                        >
-                            IconScout
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://iconscout.com/icons/ionic"
-                            className="font-size-sm underline underline-offset-2"
-                            target="_blank"
-                        >
-                            Ionic
-                        </a>
-                        <span>by</span>
-                        <a
-                            href="https://iconscout.com/contributors/icon-54"
-                            className="font-size-sm underline underline-offset-2"
-                            target="_blank"
-                        >
-                            Icon 54
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://iconscout.com/icons/redux"
-                            className="font-size-sm underline underline-offset-2"
-                            target="_blank"
-                        >
-                            Redux
-                        </a>
-                        <span>by</span>
-                        <a
-                            href="https://iconscout.com/contributors/icon-54"
-                            className="font-size-sm underline underline-offset-2"
-                            target="_blank"
-                        >
-                            Icon 54
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://iconscout.com/icons/graphql"
-                            className="font-size-sm underline underline-offset-2"
-                            target="_blank"
-                        >
-                            Graphql
-                        </a>
-                        <span>by</span>
-                        <a
-                            href="https://iconscout.com/contributors/icon-54"
-                            className="font-size-sm underline underline-offset-2"
-                        >
-                            Icon 54
-                        </a>
-                        <span>on</span>
-                        <a
-                            href="https://iconscout.com"
-                            className="font-size-sm underline underline-offset-2"
-                        >
-                            IconScout
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://iconscout.com/icons/net"
-                            className="font-size-sm underline underline-offset-2"
-                            target="_blank"
-                        >
-                            Net
-                        </a>
-                        <span>by</span>
-                        <a
-                            href="https://iconscout.com/contributors/icon-mafia"
-                            className="font-size-sm underline underline-offset-2"
-                        >
-                            Icon Mafia
-                        </a>
-                        <span>on</span>
-                        <a
-                            href="https://iconscout.com"
-                            className="font-size-sm underline underline-offset-2"
-                        >
-                            IconScout
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://iconscout.com/icons/jquery"
-                            className="font-size-sm underline underline-offset-2"
-                            target="_blank"
-                        >
-                            Jquery
-                        </a>
-                        <span>by</span>
-                        <a
-                            href="https://iconscout.com/contributors/icon-mafia"
-                            className="font-size-sm underline underline-offset-2"
-                        >
-                            Icon Mafia
-                        </a>
-                        <span>on</span>
-                        <a
-                            href="https://iconscout.com"
-                            className="font-size-sm underline underline-offset-2"
-                        >
-                            IconScout
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://iconscout.com/icons/foundation"
-                            className="font-size-sm underline underline-offset-2"
-                            target="_blank"
-                        >
-                            Foundation
-                        </a>
-                        <span>by</span>
-                        <a
-                            href="https://iconscout.com/contributors/icon-mafia"
-                            className="font-size-sm underline underline-offset-2"
-                            target="_blank"
-                        >
-                            Icon Mafia
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://iconscout.com/icons/social"
-                            className="font-size-sm underline underline-offset-2"
-                            target="_blank"
-                        >
-                            Bootsrap
-                        </a>
-                        <span>by</span>
-                        <a
-                            href="https://iconscout.com/contributors/pocike"
-                            className="font-size-sm underline underline-offset-2"
-                        >
-                            Those Icons
-                        </a>
-                        <span>on</span>
-                        <a
-                            href="https://iconscout.com"
-                            className="font-size-sm underline underline-offset-2"
-                        >
-                            IconScout
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://iconscout.com/icons/sencha"
-                            className="font-size-sm underline underline-offset-2"
-                            target="_blank"
-                        >
-                            Sencha
-                        </a>
-                        <span>by</span>
-                        <a
-                            href="https://iconscout.com/contributors/icon-mafia"
-                            className="font-size-sm underline underline-offset-2"
-                            target="_blank"
-                        >
-                            Icon Mafia
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://iconscout.com/icons/linkedin"
-                            className="font-size-sm underline underline-offset-2"
-                            target="_blank"
-                        >
-                            Linkedin
-                        </a>
-                        <span>by</span>
-                        <a
-                            href="https://iconscout.com/contributors/icon-mafia"
-                            className="font-size-sm underline underline-offset-2"
-                        >
-                            Icon Mafia
-                        </a>
-                        <span>on</span>
-                        <a
-                            href="https://iconscout.com"
-                            className="font-size-sm underline underline-offset-2"
-                        >
-                            IconScout
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://iconscout.com/icons/microsoft-sharepoint"
-                            className="font-size-sm underline underline-offset-2"
-                            target="_blank"
-                        >
-                            microsoft sharepoint
-                        </a>
-                        <span>by</span>
-                        <a
-                            href="https://iconscout.com/contributors/maninderkaur"
-                            className="font-size-sm underline underline-offset-2"
-                            target="_blank"
-                        >
-                            maninderkaur
-                        </a>
-                    </li>
-                </ul>
-            </details>
-        </section>
+        <details className="w-full bg-black text-sm text-stone-50">
+            <summary className="cursor pointer text-xl space-x-1 transition-opacity hover:opacity-85">
+                <h3 className="inline-block" id="icons-credit">
+                    {t.icons}
+                </h3>
+            </summary>
+            <ul className="list-disc gap-x-4 list-inside columns-1 sm:columns-2">
+                <li >
+                    <a
+                        href="https://iconscout.com/icons/angularjs"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        Angularjs
+                    </a>
+                    <span>by</span>
+                    <a
+                        href="https://iconscout.com/contributors/icon-mafia"
+                        className="link-underlined"
+                    >
+                        Icon Mafia
+                    </a>
+                    <span>on</span>
+                    <a href="https://iconscout.com" className="text-sm">
+                        IconScout
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://iconscout.com/icons/git"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        Git
+                    </a>
+                    <span>by</span>
+                    <a
+                        href="https://iconscout.com/contributors/icon-mafia"
+                        className="link-underlined"
+                    >
+                        Icon Mafia
+                    </a>
+                    <span>on</span>
+                    <a
+                        href="https://iconscout.com"
+                        className="link-underlined"
+                    >
+                        IconScout
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://iconscout.com/icons/github"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        Github
+                    </a>
+                    <span>on</span>
+                    <a
+                        href="https://iconscout.com"
+                        className="link-underlined"
+                    >
+                        IconScout
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://iconscout.com/icons/nodejs"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        Nodejs
+                    </a>
+                    <span>by</span>
+                    <a
+                        href="https://iconscout.com/contributors/icon-mafia"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        Icon Mafia
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://iconscout.com/icons/javascript"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        javascript
+                    </a>
+                    <span>by</span>
+                    <a
+                        href="https://iconscout.com/contributors/maninderkaur"
+                        className="link-underlined"
+                    >
+                        maninderkaur
+                    </a>
+                    <span>on</span>
+                    <a
+                        href="https://iconscout.com"
+                        className="link-underlined"
+                    >
+                        IconScout
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://iconscout.com/icons/typescript"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        Typescript
+                    </a>
+                    <span>by</span>
+                    <a
+                        href="https://iconscout.com/contributors/icon-mafia"
+                        className="link-underlined"
+                    >
+                        Icon Mafia
+                    </a>
+                    <span>on</span>
+                    <a
+                        href="https://iconscout.com"
+                        className="link-underlined"
+                    >
+                        IconScout
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://iconscout.com/icons/html"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        Html
+                    </a>
+                    <span>by</span>
+                    <a
+                        href="https://iconscout.com/contributors/icon-mafia"
+                        className="link-underlined"
+                    >
+                        Icon Mafia
+                    </a>
+                    <span>on</span>
+                    <a
+                        href="https://iconscout.com"
+                        className="link-underlined"
+                    >
+                        IconScout
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://iconscout.com/icons/css"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        Css
+                    </a>
+                    <span>by</span>
+                    <a
+                        href="https://iconscout.com/contributors/icon-mafia"
+                        className="link-underlined"
+                    >
+                        Icon Mafia
+                    </a>
+                    <span>on</span>
+                    <a
+                        href="https://iconscout.com"
+                        className="link-underlined"
+                    >
+                        IconScout
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://iconscout.com/icons/react"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        React
+                    </a>
+                    <span>by</span>
+                    <a
+                        href="https://iconscout.com/contributors/icon-mafia"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        Icon Mafia
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://iconscout.com/icons/express"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        Express
+                    </a>
+                    <span>by</span>
+                    <a
+                        href="https://iconscout.com/contributors/icon-mafia"
+                        className="link-underlined"
+                    >
+                        Icon Mafia
+                    </a>
+                    <span>on</span>
+                    <a
+                        href="https://iconscout.com"
+                        className="link-underlined"
+                    >
+                        IconScout
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://iconscout.com/icons/chevron-right"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        Chevron Right
+                    </a>
+                    <span>by</span>
+                    <a
+                        href="https://iconscout.com/contributors/fatkhulkarim"
+                        className="link-underlined"
+                    >
+                        Fatkhul Karim
+                    </a>
+                    <span>on</span>
+                    <a
+                        href="https://iconscout.com"
+                        className="link-underlined"
+                    >
+                        IconScout
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://iconscout.com/icons/phone"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        Phone
+                    </a>
+                    <span>by</span>
+                    <a
+                        href="https://iconscout.com/contributors/eva-icons"
+                        className="link-underlined"
+                    >
+                        Akveo
+                    </a>
+                    <span>on</span>
+                    <a
+                        href="https://iconscout.com"
+                        className="link-underlined"
+                    >
+                        IconScout
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://iconscout.com/icons/ionic"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        Ionic
+                    </a>
+                    <span>by</span>
+                    <a
+                        href="https://iconscout.com/contributors/icon-54"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        Icon 54
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://iconscout.com/icons/redux"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        Redux
+                    </a>
+                    <span>by</span>
+                    <a
+                        href="https://iconscout.com/contributors/icon-54"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        Icon 54
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://iconscout.com/icons/graphql"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        Graphql
+                    </a>
+                    <span>by</span>
+                    <a
+                        href="https://iconscout.com/contributors/icon-54"
+                        className="link-underlined"
+                    >
+                        Icon 54
+                    </a>
+                    <span>on</span>
+                    <a
+                        href="https://iconscout.com"
+                        className="link-underlined"
+                    >
+                        IconScout
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://iconscout.com/icons/net"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        Net
+                    </a>
+                    <span>by</span>
+                    <a
+                        href="https://iconscout.com/contributors/icon-mafia"
+                        className="link-underlined"
+                    >
+                        Icon Mafia
+                    </a>
+                    <span>on</span>
+                    <a
+                        href="https://iconscout.com"
+                        className="link-underlined"
+                    >
+                        IconScout
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://iconscout.com/icons/jquery"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        Jquery
+                    </a>
+                    <span>by</span>
+                    <a
+                        href="https://iconscout.com/contributors/icon-mafia"
+                        className="link-underlined"
+                    >
+                        Icon Mafia
+                    </a>
+                    <span>on</span>
+                    <a
+                        href="https://iconscout.com"
+                        className="link-underlined"
+                    >
+                        IconScout
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://iconscout.com/icons/foundation"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        Foundation
+                    </a>
+                    <span>by</span>
+                    <a
+                        href="https://iconscout.com/contributors/icon-mafia"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        Icon Mafia
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://iconscout.com/icons/social"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        Bootsrap
+                    </a>
+                    <span>by</span>
+                    <a
+                        href="https://iconscout.com/contributors/pocike"
+                        className="link-underlined"
+                    >
+                        Those Icons
+                    </a>
+                    <span>on</span>
+                    <a
+                        href="https://iconscout.com"
+                        className="link-underlined"
+                    >
+                        IconScout
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://iconscout.com/icons/sencha"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        Sencha
+                    </a>
+                    <span>by</span>
+                    <a
+                        href="https://iconscout.com/contributors/icon-mafia"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        Icon Mafia
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://iconscout.com/icons/linkedin"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        Linkedin
+                    </a>
+                    <span>by</span>
+                    <a
+                        href="https://iconscout.com/contributors/icon-mafia"
+                        className="link-underlined"
+                    >
+                        Icon Mafia
+                    </a>
+                    <span>on</span>
+                    <a
+                        href="https://iconscout.com"
+                        className="link-underlined"
+                    >
+                        IconScout
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://iconscout.com/icons/microsoft-sharepoint"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        microsoft sharepoint
+                    </a>
+                    <span>by</span>
+                    <a
+                        href="https://iconscout.com/contributors/maninderkaur"
+                        className="link-underlined"
+                        target="_blank"
+                    >
+                        maninderkaur
+                    </a>
+                </li>
+            </ul>
+        </details>
     );
 }

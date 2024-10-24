@@ -12,7 +12,7 @@ export function Footer() {
                     {t.a11ySkipToMain}
                 </Link>
                 <div className="flex flex-col md:flex-row divide-y-2 md:divide-y-0 md:divide-x-2  divide-slate-100">
-                    <section  className="py-2 md:p-0">
+                    <section className="py-2 md:p-0">
                         <MenuItems itemClass="nav-link-mobile" listClass='pr-2' />
                     </section>
                     <section
@@ -23,7 +23,7 @@ export function Footer() {
                         <p>
                             {t.a11ySectionDesc}{' '}
                             <a
-                                className="underline underline-offset-2"
+                                className="link-underlined"
                                 aria-label="for issues with accessibility email to"
                                 href="mailto:mlsloynaz@gmail.com"
                             >
@@ -39,13 +39,15 @@ export function Footer() {
                         <Link
                             href="https://www.linkedin.com/in/anabellorenzo/"
                         >
-                            <span className="underline underline-offset-2">
+                            <span className="link-underlined">
                                 Anabel Lorenzo Batista
                             </span>
                         </Link>
                     </section>
                 </div>
-                <IconCredits />
+                <section aria-labelledby="icons-credit" className="py-2">
+                    <IconCredits />
+                </section>
             </div>
         </footer>
     );

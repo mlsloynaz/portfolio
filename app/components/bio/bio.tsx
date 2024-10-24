@@ -19,7 +19,7 @@ export default function Bio() {
                         <p className="text-5xl">{`${t.title}`}</p>
                         <p className="pt-8 text-lg lg:max-w-[80%]">{`${t.description}`}</p>
                     </div>
-                    <div className="absolute right-0 top-32 m-2 w-40 overflow-hidden  rounded-full md:relative md:right-0 md:top-0 md:w-80">
+                    <div className="absolute right-0 top-32 m-2 w-40 overflow-hidden  rounded-full md:relative md:right-0 md:top-0 md:w-96">
                         <Image
                             src={profilePic}
                             priority
