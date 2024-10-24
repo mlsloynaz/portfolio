@@ -4,10 +4,6 @@
         "titleBar.activeBackground": "#10492D",
         "titleBar.activeForeground": "#F4FDF9"
     },
-    "cSpell.words": [
-        "libsql",
-        "Loynaz",
-        "TURSO"
-    ],
+    "cSpell.words": ["libsql", "Loynaz", "TURSO"],
     "WillLuke.nextjs.hasPrompted": true
 }

@@ -1,1 +1,1 @@
-export {default} from './contact-details'
+export { default } from './contact-details';

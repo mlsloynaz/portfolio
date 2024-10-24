@@ -9,22 +9,22 @@
     }
 
     h2 {
-        @apply text-5xl pb-8;
+        @apply pb-8 text-5xl;
     }
 
     h3 {
-        @apply text-xl pb-2;
+        @apply pb-2 text-xl;
     }
 
     a {
-        @apply hover:opacity-90 transition-opacity;
+        @apply py-4 transition-opacity hover:opacity-80;
     }
 }
 
 @layer components {
     /* Button Components */
     .button-base {
-        @apply px-4 py-2 rounded-xl transition-colors duration-300;
+        @apply text-center rounded-xl px-4 py-2 transition-colors duration-300;
     }
 
     .button-blue {
@@ -37,11 +37,11 @@
 
     /* Card Components */
     .project-card {
-        @apply flex flex-col shrink-0 grow-0 h-48 w-52 bg-[#F6F1E7] p-4 justify-between rounded-lg;
+        @apply flex h-48 w-52 shrink-0 grow-0 flex-col justify-between rounded-lg bg-[#F6F1E7] p-4;
     }
 
     .project-card-title {
-        @apply text-xl pb-4 text-gray-800 decoration-4;
+        @apply pb-4 text-xl text-gray-800 decoration-4;
     }
 
     .project-card-subtitle {
@@ -50,7 +50,7 @@
 
     /* Layout Components */
     .header-container {
-        @apply fixed z-20 left-0 top-0 flex flex-col w-full justify-center items-center border-b border-gray-300;
+        @apply fixed left-0 top-0 z-20 flex w-full flex-col items-center justify-center border-b border-gray-300;
     }
 
     .nav-link {
@@ -62,16 +62,16 @@
     }
 
     .section-container {
-        @apply flex flex-col h-full text-gray-700;
+        @apply flex h-full flex-col text-gray-700;
     }
 
     .contact-section {
-        @apply bg-[#191d3c] mt-24 flex flex-col h-full bg-portfolio bg-cover bg-bottom text-stone-100 lg:rounded-lg;
+        @apply mt-24 flex h-full flex-col bg-[#191d3c] bg-portfolio bg-cover bg-bottom text-stone-100 lg:rounded-lg;
     }
 }
 
 @layer utilities {
-/* Layout Utilities */
+    /* Layout Utilities */
     .page-width {
         @apply w-full max-w-[1024px] px-6 sm:px-12;
     }
@@ -81,24 +81,24 @@
     }
 
     .no-content-page {
-        @apply flex flex-col justify-center items-center my-10;
+        @apply my-10 flex flex-col items-center justify-center;
     }
 
     .content-page {
-        @apply flex flex-col page-width p-4 py-20 mt-32 overflow-x-hidden;
+        @apply page-width mt-32 flex flex-col overflow-x-hidden p-4 py-20;
     }
 
     .section-spacing {
-        @apply flex flex-col h-full text-gray-700 page-width pt-20;
+        @apply page-width flex h-full flex-col pt-20 text-gray-700;
     }
 
     /* Flex Utilities */
     .flex-center {
-        @apply flex justify-center items-center;
+        @apply flex items-center justify-center;
     }
 
     .flex-between {
-        @apply flex justify-between items-center;
+        @apply flex items-center justify-between;
     }
 
     /* Responsive Utilities */

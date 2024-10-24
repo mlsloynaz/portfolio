@@ -1,6 +1,6 @@
-"use client"
+'use client';
 
-import { ReactElement } from "react";
+import { ReactElement } from 'react';
 
 interface MLButtonProps extends React.HTMLProps<HTMLButtonElement> {
     label?: string;
@@ -8,11 +8,13 @@ interface MLButtonProps extends React.HTMLProps<HTMLButtonElement> {
     className?: string;
     secondary?: boolean;
     dataTest?: string;
-    type?: "button" | "reset" | "submit"
+    type?: 'button' | 'reset' | 'submit';
 }
 
 export function MLButton(props: MLButtonProps) {
-    const classButtonType = props.secondary ? 'bg-white hover:bg-slate-200' : '';
+    const classButtonType = props.secondary
+        ? 'bg-white hover:bg-slate-200'
+        : '';
     const classDisabled = props.disabled ? 'text-gray-400 bg-gray-100 ' : '';
 
     function handleClick(event: React.MouseEvent<HTMLButtonElement>) {
@@ -20,7 +22,7 @@ export function MLButton(props: MLButtonProps) {
             props.onClick(event);
         }
     }
-    const classButton = "button-blue"
+    const classButton = 'button-blue';
     return (
         <div data-test={props.dataTest} className={props.className}>
             <button
@@ -28,9 +30,11 @@ export function MLButton(props: MLButtonProps) {
                 onClick={handleClick}
                 className={`${classDisabled} ${classButton} ${classButtonType}`}
                 disabled={props.disabled}
-                type={props.type || "button"}
+                type={props.type || 'button'}
             >
-                {props.label && props.label.length > 0 ? <span className="text-xs md:text-sm">{props.label}</span> : null}
+                {props.label && props.label.length > 0 ? (
+                    <span className="text-xs md:text-sm">{props.label}</span>
+                ) : null}
                 {props.children}
             </button>
         </div>
