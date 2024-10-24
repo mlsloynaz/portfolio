@@ -14,8 +14,8 @@ export default function Error({
     }, [error])
 
     return (
-        <main className="my-10 flex flex-col justify-center items-center">
-            <h2 className="text-3xl py-10" >Error</h2>
+        <main className="no-content-page">
+            <h2 className="py-10">Error</h2>
             <p className="pb-10">Something went wrong!</p>
             <button className="button-blue"
                 onClick={

@@ -11,8 +11,8 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
     const yearsStr = years.join(', ');
 
     return (
-        <main className="overflow-x-hidden flex flex-col p-4  w-full page-width mt-32 py-20 ">
-            <h2 className="text-3xl w-full bg-[#F6F1E7] rounded-lg p-4 text-slate-900">{title}</h2>
+        <main className="content-page">
+            <h2 className="w-full bg-[#F6F1E7] rounded-lg p-4 text-slate-900">{title}</h2>
             <Navigation prevLink={prevLink} nextLink={nextLink} />
             <div className="flex flex-col flex-1 items-center md:flex-row md:justify-center gap-4 h-full md:h-[450px] p-4 md:w-84">
                 <div className="w-full  ">

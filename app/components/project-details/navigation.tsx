@@ -13,7 +13,7 @@ export function Navigation({ nextLink, prevLink }: NavigationProps) {
     const prev = decodeURIComponent(prevLink)
     return (
         <div className="flex justify-between underline underline-offset-1 my-4">
-            {prevLink ? <Link href={prev}>
+            {prevLink ? <Link href={prev} className='hover:font-medium'>
                 <Image
                     src={chevron}
                     alt={`${t.a11yGoto} ${prev}`}
@@ -23,7 +23,7 @@ export function Navigation({ nextLink, prevLink }: NavigationProps) {
                 />
                 <p className="inline px-2">Prev</p>
             </Link> : <div className="h-4 w-4"/>}
-            {nextLink ? <Link href={next}>
+            {nextLink ? <Link href={next} className='hover:font-medium'>
                 <p className="inline px-2">Next</p>
                 <Image
                     src={chevron}

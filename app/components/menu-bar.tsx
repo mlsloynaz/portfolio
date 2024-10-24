@@ -26,8 +26,8 @@ export default function MenuBar() {
 
     return (
         <>
-            <nav className="flex justify-between items-center h-20 w-full page-width py-4 bg-stone-50/80  backdrop-filter backdrop-blur-md">
-                <Link href="/">
+            <nav className="flex-between page-width py-4">
+                <Link href="/" className="hover:font-medium transition-opacity">
                     <Image
                         src="/images/logo.webp"
                         alt={t.a11yGotoHome}
@@ -37,19 +37,19 @@ export default function MenuBar() {
                     />
                     <p className="inline">{t.home}</p>
                 </Link>
-                <div className="hidden gap-4 md:gap-8 md:flex">
-                    <MenuItems itemClass="hover:bg-gray-200 md:rounded-xl p-4" listItemClass="inline m-2"/>
+                <div className="desktop-only gap-4 md:gap-8 md:flex">
+                    <MenuItems itemClass="nav-link" listItemClass="inline m-2"/>
                 </div>
                 <div className="flex justify-self-end items-center">
                     <Link className="button-blue" href="/contactme">{t.contactMeBtn}</Link>
-                    <div className="ml-4 flex h-8 w-8 items-center justify-center md:hidden">
+                    <div className="mobile-only ml-4 flex-center h-8 w-8">
                         <MenuIcon />
                     </div>
                 </div>
             </nav>
             {
                 menuOpen ?
-                    <div className="fixed top-32 flex flex-col bg-slate-50 w-full bg-opacity-95 md:hidden" onClick={handleMenuMobileClick}>
+                    <div className="mobile-only fixed top-20 flex flex-col bg-slate-50 w-full " onClick={handleMenuMobileClick}>
                         <MenuItems itemClass="border-y border-gray-300 hover:bg-gray-200 w-full block"/>
                     </div> : null
             }

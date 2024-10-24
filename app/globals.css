@@ -2,8 +2,111 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities{
-    .page-width{
-        @apply max-w-[1024px] px-6  sm:px-12;
+@layer base {
+    /* Base styles for consistent typography */
+    h1 {
+        @apply text-xl font-bold;
+    }
+
+    h2 {
+        @apply text-5xl pb-8;
+    }
+
+    h3 {
+        @apply text-xl pb-2;
+    }
+
+    a {
+        @apply hover:opacity-90 transition-opacity;
+    }
+}
+
+@layer components {
+    /* Button Components */
+    .button-base {
+        @apply px-4 py-2 rounded-xl transition-colors duration-300;
+    }
+
+    .button-blue {
+        @apply button-base bg-[#474B96] text-stone-50 hover:bg-[#373b75];
+    }
+
+    .button-white {
+        @apply button-base bg-stone-50 text-[#474B96] hover:bg-stone-200;
+    }
+
+    /* Card Components */
+    .project-card {
+        @apply flex flex-col shrink-0 grow-0 h-48 w-52 bg-[#F6F1E7] p-4 justify-between rounded-lg;
+    }
+
+    .project-card-title {
+        @apply text-xl pb-4 text-gray-800 decoration-4;
+    }
+
+    .project-card-subtitle {
+        @apply text-sm text-[#4d5157];
+    }
+
+    /* Layout Components */
+    .header-container {
+        @apply fixed z-20 left-0 top-0 flex flex-col w-full justify-center items-center border-b border-gray-300;
+    }
+
+    .nav-link {
+        @apply p-4 hover:bg-gray-200 md:rounded-xl;
+    }
+
+    .nav-link-mobile {
+        @apply block w-full p-2 text-lg hover:bg-gray-700 md:rounded-xl;
+    }
+
+    .section-container {
+        @apply flex flex-col h-full text-gray-700;
+    }
+
+    .contact-section {
+        @apply bg-[#191d3c] mt-24 flex flex-col h-full bg-portfolio bg-cover bg-bottom text-stone-100 lg:rounded-lg;
+    }
+}
+
+@layer utilities {
+/* Layout Utilities */
+    .page-width {
+        @apply w-full max-w-[1024px] px-6 sm:px-12;
+    }
+
+    .content-container {
+        @apply flex flex-col items-center;
+    }
+
+    .no-content-page {
+        @apply flex flex-col justify-center items-center my-10;
+    }
+
+    .content-page {
+        @apply flex flex-col page-width p-4 py-20 mt-32 overflow-x-hidden;
+    }
+
+    .section-spacing {
+        @apply flex flex-col h-full text-gray-700 page-width pt-20;
+    }
+
+    /* Flex Utilities */
+    .flex-center {
+        @apply flex justify-center items-center;
+    }
+
+    .flex-between {
+        @apply flex justify-between items-center;
+    }
+
+    /* Responsive Utilities */
+    .mobile-only {
+        @apply block md:hidden;
+    }
+
+    .desktop-only {
+        @apply hidden md:block;
     }
 }
