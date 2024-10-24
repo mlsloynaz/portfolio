@@ -1,39 +1,42 @@
-import Link from 'next/link'
+import Link from 'next/link';
 import { Header as t } from '@/utils/resourceContent';
 
 const sections = [
     {
         name: t.about,
-        url: "/"
+        url: '/',
     },
     {
         name: t.experience,
-        url: "#experience-section"
+        url: '#experience-section',
     },
     {
         name: t.contactInfo,
-        url: "#contact-info-section"
-    }
-
-]
+        url: '#contact-info-section',
+    },
+];
 
 type MenuItemsPro = {
     itemClass: string;
     listItemClass?: string;
     listClass?: string;
-}
+};
 
-export function MenuItems({ itemClass = "", listClass = "", listItemClass = "" }: MenuItemsPro) {
-    const itemCommon = "p-4"
+export function MenuItems({
+    itemClass = '',
+    listClass = '',
+    listItemClass = '',
+}: MenuItemsPro) {
+    const itemCommon = 'p-4';
     return (
         <ul role="menu" className={listClass}>
-            {
-                sections.map(({ name, url }) => (
-                    <li key={url} role="menuitem" className={listItemClass}>
-                        <Link className={`${itemCommon} ${itemClass}`} href={url}>{name}</Link>
-                    </li>
-                ))
-            }
+            {sections.map(({ name, url }) => (
+                <li key={url} role="menuitem" className={listItemClass}>
+                    <Link className={`${itemCommon} ${itemClass}`} href={url}>
+                        {name}
+                    </Link>
+                </li>
+            ))}
         </ul>
-    )
+    );
 }

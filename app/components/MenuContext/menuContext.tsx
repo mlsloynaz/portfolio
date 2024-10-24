@@ -1,6 +1,11 @@
-"use client"
+'use client';
 
-import React, { ReactElement, createContext, useContext, useState } from 'react';
+import React, {
+    ReactElement,
+    createContext,
+    useContext,
+    useState,
+} from 'react';
 
 interface MenuContextType {
     menuOpen: boolean;
@@ -10,7 +15,7 @@ interface MenuContextType {
 // Create a context
 const MenuContext = createContext<MenuContextType>({
     menuOpen: false,
-    setMenuOpen:()=>{}
+    setMenuOpen: () => {},
 });
 
 // Create a provider component

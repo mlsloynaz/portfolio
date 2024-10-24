@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 import Link from 'next/link';
 import { Projects as t } from '@/utils/resourceContent';
 
@@ -6,9 +6,13 @@ type ProjectThumbnailProps = {
     title: string;
     shortDescription: string;
     logo: string;
-}
+};
 
-export default function ProjectThumbnail({ title, shortDescription, logo }: ProjectThumbnailProps) {
+export default function ProjectThumbnail({
+    title,
+    shortDescription,
+    logo,
+}: ProjectThumbnailProps) {
     return (
         <div className="project-card">
             <div className="flex flex-col">
@@ -16,8 +20,12 @@ export default function ProjectThumbnail({ title, shortDescription, logo }: Proj
                 <p className="project-card-subtitle">{shortDescription}</p>
             </div>
             <div className="flex justify-between">
-                <Link className="text-md text-grey-800 underline underline-offset-4 decoration-1"
-                    href={`project/${title}`} >{t.learnMore}<span className="sr-only">{`${t.about} ${title}`}</span>
+                <Link
+                    className="text-md text-grey-800 underline decoration-1 underline-offset-4"
+                    href={`project/${title}`}
+                >
+                    {t.learnMore}
+                    <span className="sr-only">{`${t.about} ${title}`}</span>
                 </Link>
                 <div className="relative h-8 w-8">
                     <Image
@@ -25,10 +33,10 @@ export default function ProjectThumbnail({ title, shortDescription, logo }: Proj
                         alt={title}
                         fill
                         sizes="32px"
-                        className='object-contain'
+                        className="object-contain"
                     />
                 </div>
             </div>
         </div>
-    )
+    );
 }
