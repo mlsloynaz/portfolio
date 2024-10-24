@@ -1,5 +1,11 @@
 {
-    "tailwindConfig": "./tailwind.config.js",
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 4,
+    "printWidth": 80,
+    "bracketSpacing": true,
+    "arrowParens": "avoid",
+    "tailwindConfig": "./tailwind.config.ts",
     "tailwindPreserveWhitespace": true,
     "plugins": ["prettier-plugin-tailwindcss"]
 }
