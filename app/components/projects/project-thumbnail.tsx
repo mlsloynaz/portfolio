@@ -21,7 +21,7 @@ export default function ProjectThumbnail({
             </div>
             <div className="flex justify-between">
                 <Link
-                    className="text-md text-grey-800 underline decoration-1 underline-offset-4"
+                    className="text-md text-grey-800 underline decoration-1 underline-offset-4 hover:font-bold"
                     href={`project/${title}`}
                 >
                     {t.learnMore}

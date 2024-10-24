@@ -17,14 +17,14 @@
     }
 
     a {
-        @apply transition-opacity hover:opacity-90;
+        @apply py-4 transition-opacity hover:opacity-80;
     }
 }
 
 @layer components {
     /* Button Components */
     .button-base {
-        @apply rounded-xl px-4 py-2 transition-colors duration-300;
+        @apply text-center rounded-xl px-4 py-2 transition-colors duration-300;
     }
 
     .button-blue {
