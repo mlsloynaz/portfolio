@@ -19,6 +19,14 @@
     a {
         @apply py-4 transition-opacity hover:opacity-80;
     }
+
+	input {
+		@apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-blue-800 focus:ring-2  block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white;
+	}
+
+    li{
+        @apply space-x-1 py-1
+    }
 }
 
 @layer components {
@@ -58,7 +66,7 @@
     }
 
     .nav-link-mobile {
-        @apply block w-full p-2 text-lg hover:bg-gray-700 md:rounded-xl;
+        @apply inline-block underline underline-offset-2 py-1;
     }
 
     .section-container {
@@ -108,5 +116,9 @@
 
     .desktop-only {
         @apply hidden md:block;
+    }
+
+    .link-underlined {
+        @apply underline underline-offset-2;
     }
 }

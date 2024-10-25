@@ -12,7 +12,7 @@ export default function Header() {
                     <Link className="sr-only" href="#main-content">
                         {t.a11ySkipToMain}
                     </Link>
-                    <h1>Maria Sierra-Loynaz Portfolio </h1>
+                    <h1>Maria Sierra-Loynaz Portfolio</h1>
                     <a className="flex items-center" href="tel:+18137685545">
                         <Image
                             src="/images/phone-call.svg"
