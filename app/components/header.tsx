@@ -25,7 +25,7 @@ export default function Header() {
                 </div>
             </div>
             <MenuProvider>
-                <div className="flex-center h-20 w-full flex-col bg-stone-50/80 shadow-lg backdrop-blur-md backdrop-filter">
+                <div className="flex-center h-20 w-full flex-col bg-stone-50 md:bg-stone-50/80 shadow-lg md:backdrop-blur-md md:backdrop-filter">
                     <MenuBar />
                 </div>
             </MenuProvider>
