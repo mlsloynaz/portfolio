@@ -5,13 +5,13 @@ import { Footer as t } from '@/utils/resourceContent';
 
 export function IconCredits() {
     return (
-        <details className="w-full bg-black text-sm text-stone-50">
+        <details className="w-full bg-black text-sm text-stone-50 group">
             <summary className="cursor pointer text-xl space-x-1 transition-opacity hover:opacity-85">
                 <h3 className="inline-block" id="icons-credit">
                     {t.icons}
                 </h3>
             </summary>
-            <ul className="list-disc gap-x-4 list-inside columns-1 sm:columns-2">
+            <ul className="list-disc gap-x-4 list-inside columns-1 sm:columns-2 group-ope:pt-4">
                 <li >
                     <a
                         href="https://iconscout.com/icons/angularjs"
