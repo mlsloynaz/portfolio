@@ -11,7 +11,7 @@ export function IconCredits() {
                     {t.icons}
                 </h3>
             </summary>
-            <ul className="list-disc gap-x-4 list-inside columns-1 sm:columns-2 group-ope:pt-4">
+            <ul className="list-disc gap-x-4 list-inside columns-1 sm:columns-2 group-open:pt-4">
                 <li >
                     <a
                         href="https://iconscout.com/icons/angularjs"
@@ -93,8 +93,7 @@ export function IconCredits() {
                         href="https://iconscout.com/icons/javascript"
                         className="link-underlined"
                         target="_blank"
-                    >
-                        javascript
+                    >Javascript
                     </a>
                     <span>by</span>
                     <a
@@ -103,6 +102,7 @@ export function IconCredits() {
                     >
                         maninderkaur
                     </a>
+                    {' '}
                     <span>on</span>
                     <a
                         href="https://iconscout.com"
