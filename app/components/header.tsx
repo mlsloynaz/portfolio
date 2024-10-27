@@ -6,7 +6,7 @@ import { Header as t } from '@/utils/resourceContent';
 
 export default function Header() {
     return (
-        <header className="header-container">
+        <header className="fixed left-0 top-0 z-20 flex w-full flex-col items-center justify-center border-b border-gray-300">
             <div className="flex w-full flex-col items-center bg-black text-stone-50">
                 <div className="page-width flex  h-12 justify-between py-2 text-stone-50">
                     <Link className="sr-only" href="#main-content">
