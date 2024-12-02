@@ -8,11 +8,11 @@ const sections = [
     },
     {
         name: t.experience,
-        url: '#experience-section',
+        url: '/#experience-section',
     },
     {
         name: t.contactInfo,
-        url: '#contact-info-section',
+        url: '/#contact-info-section',
     },
 ];
 
