@@ -26,7 +26,7 @@ export default function MenuBar() {
 
     return (
         <>
-            <nav className="flex-between page-width py-4">
+            <nav className="flex items-center justify-between page-width py-4">
                 <Link href="/" className="transition-opacity hover:font-medium">
                     <Image
                         src="/images/logo.webp"

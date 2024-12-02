@@ -14,10 +14,10 @@ export default function ProjectThumbnail({
     logo,
 }: ProjectThumbnailProps) {
     return (
-        <div className="project-card">
+        <div className="flex h-48 w-52 shrink-0 grow-0 flex-col justify-between rounded-lg bg-[#F6F1E7] p-4">
             <div className="flex flex-col">
-                <p className="project-card-title">{title}</p>
-                <p className="project-card-subtitle">{shortDescription}</p>
+                <p className="pb-4 text-xl text-gray-800 decoration-4">{title}</p>
+                <p className="text-sm text-[#4d5157]">{shortDescription}</p>
             </div>
             <div className="flex justify-between">
                 <Link

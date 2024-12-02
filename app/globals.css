@@ -43,38 +43,13 @@
         @apply button-base bg-stone-50 text-[#474B96] hover:bg-stone-200;
     }
 
-    /* Card Components */
-    .project-card {
-        @apply flex h-48 w-52 shrink-0 grow-0 flex-col justify-between rounded-lg bg-[#F6F1E7] p-4;
-    }
-
-    .project-card-title {
-        @apply pb-4 text-xl text-gray-800 decoration-4;
-    }
-
-    .project-card-subtitle {
-        @apply text-sm text-[#4d5157];
-    }
-
     /* Layout Components */
-    .header-container {
-        @apply fixed left-0 top-0 z-20 flex w-full flex-col items-center justify-center border-b border-gray-300;
-    }
-
     .nav-link {
         @apply p-4 hover:bg-gray-200 md:rounded-xl;
     }
 
     .nav-link-mobile {
         @apply inline-block underline underline-offset-2 py-1;
-    }
-
-    .section-container {
-        @apply flex h-full flex-col text-gray-700;
-    }
-
-    .contact-section {
-        @apply mt-24 flex h-full flex-col bg-[#191d3c] bg-portfolio bg-cover bg-bottom text-stone-100 lg:rounded-lg;
     }
 }
 
@@ -103,10 +78,6 @@
     /* Flex Utilities */
     .flex-center {
         @apply flex items-center justify-center;
-    }
-
-    .flex-between {
-        @apply flex items-center justify-between;
     }
 
     /* Responsive Utilities */
