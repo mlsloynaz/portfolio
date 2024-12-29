@@ -2,8 +2,8 @@ import { projectData } from '@/app/utils/projectData';
 import { ProjectDetail as t } from '@/utils/resourceContent';
 
 import Image from 'next/image';
-import { Navigation } from '@/components/project-details/navigation';
-import { SkillList } from '@/components/project-details/skillList';
+import { Navigation } from '@/app/components/project-details/navigation';
+import { SkillList } from '@/app/components/project-details/skillList';
 
 export default function ProjectDetails({ params }: { params: { id: string } }) {
     const title = decodeURIComponent(params.id);

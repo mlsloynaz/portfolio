@@ -1,6 +1,6 @@
-import Bio from '@/components/bio';
-import Projects from '@/components/projects';
-import ContactDetails from '@/components/contact-details';
+import Bio from '@/app/components/bio';
+import Projects from '@/app/components/projects';
+import ContactDetails from '@/app/components/contact-details';
 
 export default function Home() {
     return (

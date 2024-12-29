@@ -1,4 +1,4 @@
-import { ContactMeForm } from '@/components/contact-me';
+import { ContactMeForm } from '@/app/components/contact-me';
 import { ContactMe as t } from '@/utils/resourceContent';
 
 export default function ContactMe() {
